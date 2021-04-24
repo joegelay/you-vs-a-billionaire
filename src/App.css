@@ -1,5 +1,13 @@
+:root {
+  --light-gray-color: hsl(71, 16%, 87%);
+  --dark-gray-color: hsl(320, 4%, 29%);
+  --green-color: hsl(166, 44%, 24%);
+  --light-blue-color: hsl(189, 13%, 80%);
+  --orange-color: hsl(23, 53%, 56%);
+}
+
 .page {
-  background-color: #282c34;
+  background-color: var(--gray-color);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -7,5 +15,5 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: white;
+  color: var(--green-color);
 }
