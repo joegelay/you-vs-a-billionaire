@@ -1,18 +1,20 @@
 import "./App.css";
-import React, { useState } from "react";
+import { useState } from "react";
+import PageOne from "./components/PageOne";
+import PageTwo from "./components/PageTwo";
 
 function App() {
-  const [userSalary, setUserSalary] = useState(0);
+  const [salary, setSalary] = useState();
+  const [formattedSalary, setFormattedSalary] = useState();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>You Vs. A Billionaire {userSalary}</h1>
-
-        <button onClick={() => setUserSalary(userSalary + 1)}>
-          Increase Salary
-        </button>
-      </header>
+    <div className="app">
+      <PageOne
+        salary={salary}
+        setSalary={setSalary}
+        setFormattedSalary={setFormattedSalary}
+      ></PageOne>
+      <PageTwo salary={salary} formattedSalary={formattedSalary}></PageTwo>
     </div>
   );
 }
