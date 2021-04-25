@@ -1,19 +1,8 @@
-import NumberFormat from "react-number-format";
 import Bezos from "../bezos.svg";
+import SalaryInput from "./SalaryInput";
 
 export default function PageOne(props) {
   const { salary, setSalary, setFormattedSalary } = props;
-
-  const handleSubmit = () => {
-    alert(salary);
-  };
-
-  const MAX_VAL = 100000000;
-  const MIN_VAL = 0;
-  const withValueLimit = (inputObj) => {
-    const { value } = inputObj;
-    if (value >= MIN_VAL && MAX_VAL > value) return inputObj;
-  };
 
   return (
     <div className="page">
@@ -34,26 +23,11 @@ export default function PageOne(props) {
             <p>Enter your annual income below to see how you stack&nbsp;up:</p>
           </div>
 
-          <div className="salary-input">
-            <NumberFormat
-              thousandSeparator={true}
-              prefix={"$"}
-              inputmode="numeric"
-              decimalScale={0}
-              value={salary}
-              isAllowed={withValueLimit}
-              onValueChange={(values) => {
-                const { value, formattedValue } = values;
-                // formattedValue = $2,223
-                // value ie, 2223
-                setFormattedSalary(formattedValue);
-                setSalary(value);
-              }}
-            />
-            <button className="submit" onClick={handleSubmit}>
-              Submit
-            </button>
-          </div>
+          <SalaryInput
+            salary={salary}
+            setSalary={setSalary}
+            setFormattedSalary={setFormattedSalary}
+          ></SalaryInput>
         </div>
         <div className="column flex-column">
           <img id="bezos-svg" src={Bezos} alt="Jeff Bezos" />
