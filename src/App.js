@@ -7,6 +7,8 @@ function App() {
   const [salary, setSalary] = useState();
   const [formattedSalary, setFormattedSalary] = useState();
 
+  const multiplier = Math.round(75000000000 / salary);
+
   return (
     <div className="app">
       <PageOne
@@ -14,7 +16,11 @@ function App() {
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
       ></PageOne>
-      <PageTwo salary={salary} formattedSalary={formattedSalary}></PageTwo>
+      <PageTwo
+        salary={salary}
+        formattedSalary={formattedSalary}
+        multiplier={multiplier}
+      ></PageTwo>
     </div>
   );
 }
