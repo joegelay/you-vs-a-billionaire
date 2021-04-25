@@ -22,16 +22,16 @@ export default function PageOne(props) {
           <header>
             <h1>You</h1>
             <p>VS.</p>
-            <h1>A Billionaire</h1>
+            <h1>A&nbsp;Billionaire</h1>
           </header>
 
           <div className="flex-column">
             <p>
               In 2020, Jeff Bezos's net worth grew by an estimated{" "}
-              <strong>$74 billion</strong>.
+              <strong>$74&nbsp;billion</strong>.
             </p>
 
-            <p>Enter your annual income below to see how you stack up:</p>
+            <p>Enter your annual income below to see how you stack&nbsp;up:</p>
           </div>
 
           <div className="salary-input">
@@ -50,10 +50,12 @@ export default function PageOne(props) {
                 setSalary(value);
               }}
             />
-            <button onClick={handleSubmit}>Submit</button>
+            <button className="submit" onClick={handleSubmit}>
+              Submit
+            </button>
           </div>
         </div>
-        <div className="column">
+        <div className="column flex-column">
           <img src={Bezos} alt="Jeff Bezos" />
         </div>
       </div>
