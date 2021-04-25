@@ -155,4 +155,5 @@ strong {
 
 #bezos-svg {
   min-width: 475px;
+  max-width: 600px;
 }
