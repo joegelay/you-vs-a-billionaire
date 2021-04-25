@@ -38,7 +38,7 @@ html {
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 100%;
 }
 
@@ -78,13 +78,17 @@ html {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 90%;
+  width: 85%;
   background-color: var(--gray-color);
 }
 
 p {
   margin-bottom: 1rem;
   color: var(--dark-gray-color);
+}
+
+.opening-blurb {
+  line-height: 1.3;
 }
 
 header {
@@ -101,6 +105,7 @@ header {
 
 header > p {
   font-size: 2rem;
+  margin-top: 10px;
   margin-bottom: -10px;
   color: var(--green-color);
 }
@@ -146,4 +151,8 @@ input[type="text"]:focus {
 strong {
   font-weight: bold;
   color: var(--orange-color);
+}
+
+#bezos-svg {
+  min-width: 475px;
 }

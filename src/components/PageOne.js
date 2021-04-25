@@ -25,10 +25,10 @@ export default function PageOne(props) {
             <h1>A&nbsp;Billionaire</h1>
           </header>
 
-          <div className="flex-column">
+          <div className="flex-column opening-blurb">
             <p>
               In 2020, Jeff Bezos's net worth grew by an estimated{" "}
-              <strong>$74&nbsp;billion</strong>.
+              <strong>$75&nbsp;billion</strong>.
             </p>
 
             <p>Enter your annual income below to see how you stack&nbsp;up:</p>
@@ -56,7 +56,7 @@ export default function PageOne(props) {
           </div>
         </div>
         <div className="column flex-column">
-          <img src={Bezos} alt="Jeff Bezos" />
+          <img id="bezos-svg" src={Bezos} alt="Jeff Bezos" />
         </div>
       </div>
     </div>
