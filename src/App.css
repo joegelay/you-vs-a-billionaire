@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 :root {
-  --light-gray-color: hsl(71, 16%, 87%);
-  --dark-gray-color: hsl(300, 1%, 28%);
-  --green-color: hsl(166, 44%, 24%);
-  --light-blue-color: hsl(189, 13%, 80%);
-  --orange-color: hsl(23, 53%, 56%);
+  --light-gray-color: #e1e3d9;
+  --dark-gray-color: #484748;
+  --green-color: #22584c;
+  --light-blue-color: #c5d1d3;
+  --orange-color: #ca8153;
 }
 
 html {
@@ -36,6 +36,13 @@ html {
 }
 
 .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row-reverse {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -80,6 +87,10 @@ html {
   min-height: 100vh;
   width: 85%;
   background-color: var(--gray-color);
+}
+
+.page-two {
+  justify-content: space-evenly;
 }
 
 p {
@@ -156,4 +167,25 @@ strong {
 #bezos-svg {
   min-width: 475px;
   max-width: 600px;
+}
+
+h2,
+h3 {
+  margin: 1rem 0;
+}
+
+.page-two-image {
+  max-width: 250px;
+}
+
+.col-1-margin {
+  margin: 2rem;
+}
+
+.uptick {
+  font-weight: bold;
+}
+
+.scroll-down {
+  max-width: 50px;
 }
