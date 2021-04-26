@@ -6,7 +6,7 @@ export default function PageOne(props) {
 
   return (
     <div className="page">
-      <div className="row">
+      <div className="row-reverse">
         <div className="column flex-column">
           <header>
             <h1>You</h1>
