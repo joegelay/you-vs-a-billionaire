@@ -33,6 +33,12 @@ html {
   justify-content: center;
   color: var(--green-color);
   background-color: var(--gray-color);
+  border: solid 10px var(--green-color);
+}
+@media screen and (max-width: 600px) {
+  .app {
+    border: solid 8px var(--green-color);
+  }
 }
 
 .row {
