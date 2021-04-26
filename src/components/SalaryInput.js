@@ -3,7 +3,8 @@ import NumberFormat from "react-number-format";
 export default function SalaryInput(props) {
   const { salary, setSalary, setFormattedSalary } = props;
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert(salary);
   };
 
@@ -15,7 +16,7 @@ export default function SalaryInput(props) {
   };
 
   return (
-    <div className="salary-input">
+    <form className="salary-input" onSubmit={handleSubmit}>
       <NumberFormat
         thousandSeparator={true}
         prefix={"$"}
@@ -31,9 +32,9 @@ export default function SalaryInput(props) {
           setSalary(value);
         }}
       />
-      <button className="submit" onClick={handleSubmit}>
+      <button className="submit" type="submit">
         Submit
       </button>
-    </div>
+    </form>
   );
 }
