@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
+import PageThree from "./components/PageThree";
 
 function App() {
   const [salary, setSalary] = useState();
@@ -21,6 +22,11 @@ function App() {
         formattedSalary={formattedSalary}
         multiplier={multiplier}
       ></PageTwo>
+      <PageThree
+        salary={salary}
+        formattedSalary={formattedSalary}
+        multiplier={multiplier}
+      ></PageThree>
     </div>
   );
 }

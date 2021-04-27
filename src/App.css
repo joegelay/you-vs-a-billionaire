@@ -68,6 +68,10 @@ html {
   justify-content: center;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -95,7 +99,8 @@ html {
   background-color: var(--gray-color);
 }
 
-.page-two {
+.page-two,
+.page-three {
   justify-content: space-evenly;
 }
 

@@ -8,11 +8,11 @@ export default function SalaryInput(props) {
     alert(salary);
   };
 
-  const MAX_VAL = 100000000;
+  const MAX_VAL = 10000000;
   const MIN_VAL = 0;
   const withValueLimit = (inputObj) => {
     const { value } = inputObj;
-    if (value >= MIN_VAL && MAX_VAL > value) return inputObj;
+    if (value >= MIN_VAL && MAX_VAL >= value) return inputObj;
   };
 
   return (
