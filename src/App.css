@@ -3,7 +3,7 @@
 
 :root {
   --light-gray-color: #e1e3d9;
-  --dark-gray-color: #484748;
+  --dark-gray-color: #333333;
   --green-color: #22584c;
   --light-blue-color: #c5d1d3;
   --orange-color: #ca8153;
@@ -31,7 +31,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--green-color);
+  color: var(--dark-gray-color);
   background-color: var(--gray-color);
   border: solid 10px var(--green-color);
 }
@@ -116,6 +116,7 @@ header {
   font-family: "Cormorant SC", serif;
   font-weight: bold;
   font-size: 4rem;
+  color: var(--green-color);
 
   margin-bottom: 2rem;
 }
@@ -135,11 +136,11 @@ header > p {
 }
 
 input[type="text"] {
-  direction: rtl;
+  /* direction: rtl; */
   padding: 5px;
   border: 2px solid var(--light-gray-color);
   color: var(--dark-gray-color);
-  width: 50%;
+  width: 19%;
   height: 1rem;
   font-size: 0.8rem;
 }
