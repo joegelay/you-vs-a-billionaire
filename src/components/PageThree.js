@@ -1,74 +1,26 @@
 import DumpMoney from "../dump-money.svg";
 import Increase from "../increase.svg";
 import ScrollDown from "../scroll-down.svg";
+import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
+import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
 
 export default function PageThree(props) {
   const { multiplier } = props;
-
-  const parking = 0.25;
-  const latte = 5;
-  const twenty = 20;
-
-  const rollsRoyce = 315000;
-  const audiR8 = 150000;
-  const hondaCivic = 22000;
-  const macBookPro = 1500;
-
-  const bezosRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
-  const bezosAudiAmount = Math.floor((multiplier * parking) / audiR8);
-  const bezosCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
-  const bezosMacBookAmount = Math.floor((multiplier * parking) / macBookPro);
-
-  const chooseParkingComparisonImage = () => {
-    const result = {};
-    if (bezosRollsAmount) {
-      result.src = DumpMoney;
-      result.id = "dump-money";
-      result.alt = "A person dumping money";
-      return result;
-      // } else if (bezosAudiAmount > 0) {
-      // } else if (bezosCivicAmount > 0) {
-    } else {
-      result.src = DumpMoney;
-      result.id = "dump-money";
-      result.alt = "A person dumping money";
-      return result;
-    }
-  };
-
-  const chooseParkingComparisonText = () => {
-    if (bezosRollsAmount) {
-      return ` ${
-        bezosRollsAmount > 1 ? bezosRollsAmount : "a"
-      } Rolls Royce Ghost${bezosRollsAmount > 1 ? "s" : ""}.`;
-    } else if (bezosAudiAmount) {
-      return ` ${bezosAudiAmount > 1 ? bezosAudiAmount : "an"} Audi R8${
-        bezosAudiAmount > 1 ? "s" : ""
-      }.`;
-    } else if (bezosCivicAmount) {
-      return ` ${bezosCivicAmount > 1 ? bezosCivicAmount : "a"} Honda Civic${
-        bezosCivicAmount > 1 ? "s" : ""
-      }.`;
-    } else {
-      return ` ${
-        bezosMacBookAmount > 1 ? bezosMacBookAmount : "an"
-      } Apple MacBook Pro${bezosMacBookAmount > 1 ? "s" : ""}.`;
-    }
-  };
 
   return (
     <div className="page page-three">
       <div className="row flex-row align-start">
         <div className="column flex-column col-1-margin">
           <img
-            id={chooseParkingComparisonImage().id}
+            id={chooseParkingComparisonImage(multiplier).id}
             className="page-two-image"
-            src={chooseParkingComparisonImage().src}
-            alt={chooseParkingComparisonImage().alt}
+            src={chooseParkingComparisonImage(multiplier).src}
+            alt={chooseParkingComparisonImage(multiplier).alt}
           />
           <h2>
-            You putting $0.25 in a parking meter is like Bezos buying
-            {chooseParkingComparisonText()}
+            You putting <strong>$0.25</strong> in a parking meter is like Bezos
+            buying
+            {chooseParkingComparisonText(multiplier)}
           </h2>
         </div>
 
