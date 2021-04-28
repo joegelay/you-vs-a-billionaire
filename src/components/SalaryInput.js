@@ -5,6 +5,7 @@ export default function SalaryInput(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // this alert will be changed to funcitonality for scrolling to next page.
     alert(salary);
   };
 
