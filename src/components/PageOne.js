@@ -1,4 +1,4 @@
-import Bezos from "../bezos.svg";
+import Bezos from "../svgs/bezos.svg";
 import SalaryInput from "./SalaryInput";
 
 export default function PageOne(props) {
