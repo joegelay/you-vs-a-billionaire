@@ -20,6 +20,16 @@ export default function PageFour(props) {
     return "That's less than a penny to Jeff Bezos";
   };
 
+  const chooseHouseText = () => {
+    const bezosCost = (houseCost / multiplier).toFixed(2);
+
+    if (bezosCost > 0.01) {
+      return <strong> ${(houseCost / multiplier).toFixed(2)}</strong>;
+    }
+
+    return " less than a penny";
+  };
+
   return (
     <div className="page page-four">
       <div className="row flex-row">
@@ -56,8 +66,8 @@ export default function PageFour(props) {
             In 2020, the median price for a new home in the United States was
             <strong> $334,000</strong>.
             <br />
-            Compared to your salary, Jeff Bezos could buy an average house for
-            <strong> ${(houseCost / multiplier).toFixed(2)}</strong>.
+            Compared to your salary, Jeff Bezos could buy a house for
+            {chooseHouseText()}.
           </h2>
         </div>
       </div>
