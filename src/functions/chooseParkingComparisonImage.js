@@ -1,7 +1,7 @@
-import RollsRoyce from "../rolls-royce.svg";
-import Audi from "../audi.svg";
-import Honda from "../honda.svg";
-import Laptop from "../laptop.svg";
+import RollsRoyce from "../svgs/rolls-royce.svg";
+import Audi from "../svgs/audi.svg";
+import Honda from "../svgs/honda.svg";
+import Laptop from "../svgs/laptop.svg";
 
 export default function chooseParkingComparisonImage(multiplier) {
   const parking = 0.25;

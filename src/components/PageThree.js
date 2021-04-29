@@ -1,5 +1,5 @@
-import MoneyPockets from "../money-pockets.svg";
-import ScrollDown from "../scroll-down.svg";
+import MoneyPockets from "../svgs/money-pockets.svg";
+import ScrollDown from "../svgs/scroll-down.svg";
 import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
 import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
 import chooseLatteComparisonImage from "../functions/chooseLatteComparisonImage.js";

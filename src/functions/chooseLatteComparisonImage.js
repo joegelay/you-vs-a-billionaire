@@ -1,6 +1,6 @@
-import Dunkin from "../dunkin.svg";
-import Villa from "../villa.svg";
-import Espresso from "../espresso.svg";
+import Dunkin from "../svgs/dunkin.svg";
+import Villa from "../svgs/villa.svg";
+import Espresso from "../svgs/espresso.svg";
 
 export default function chooseLatteComparisonImage(multiplier) {
   const latte = 5;

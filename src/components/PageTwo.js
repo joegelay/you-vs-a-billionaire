@@ -1,6 +1,6 @@
-import DumpMoney from "../dump-money.svg";
-import Increase from "../increase.svg";
-import ScrollDown from "../scroll-down.svg";
+import DumpMoney from "../svgs/dump-money.svg";
+import Increase from "../svgs/increase.svg";
+import ScrollDown from "../svgs/scroll-down.svg";
 
 export default function PageTwo(props) {
   const { multiplier } = props;
