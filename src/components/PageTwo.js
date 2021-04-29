@@ -32,8 +32,8 @@ export default function PageTwo(props) {
           />
           <h2>
             In other words, you spending <strong>$1</strong>, or Bezos spending
-            <strong> ${multiplier.toLocaleString()}</strong>, puts the same dent
-            in your wallets.
+            <strong> ${multiplier.toLocaleString()}</strong>, puts the same size
+            dents in your wallets.
           </h2>
         </div>
       </div>

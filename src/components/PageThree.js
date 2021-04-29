@@ -14,7 +14,7 @@ export default function PageThree(props) {
         <div className="column flex-column col-1-margin">
           <img
             id={chooseParkingComparisonImage(multiplier).id}
-            className="page-two-image"
+            className="page-three-image"
             src={chooseParkingComparisonImage(multiplier).src}
             alt={chooseParkingComparisonImage(multiplier).alt}
           />
@@ -27,7 +27,7 @@ export default function PageThree(props) {
         <div className="column flex-column col-1-margin">
           <img
             id={chooseLatteComparisonImage(multiplier).id}
-            className="page-two-image"
+            className="page-three-image"
             src={chooseLatteComparisonImage(multiplier).src}
             alt={chooseLatteComparisonImage(multiplier).alt}
           />
@@ -40,7 +40,7 @@ export default function PageThree(props) {
         <div className="column flex-column col-1-margin">
           <img
             id="money-pockets"
-            className="page-two-image"
+            className="page-three-image"
             src={MoneyPockets}
             alt="A person's pockets overflowing with money."
           />
