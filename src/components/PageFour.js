@@ -9,7 +9,7 @@ export default function PageFour(props) {
   const chooseTeslaText = () => {
     const bezosCost = (teslaCost / multiplier).toFixed(2);
 
-    if (bezosCost > 0.01) {
+    if (bezosCost >= 0.01) {
       return (
         <span>
           {["That's a mere ", <strong>${bezosCost}</strong>, " to Jeff Bezos"]}
@@ -23,7 +23,7 @@ export default function PageFour(props) {
   const chooseHouseText = () => {
     const bezosCost = (houseCost / multiplier).toFixed(2);
 
-    if (bezosCost > 0.01) {
+    if (bezosCost >= 0.01) {
       return <strong> ${(houseCost / multiplier).toFixed(2)}</strong>;
     }
 
