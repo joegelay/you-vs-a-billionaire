@@ -1,10 +1,10 @@
-import chooseLatteComparisonImage from "../functions/chooseLatteComparisonImage.js";
-import chooseLatteComparisonText from "../functions/chooseLatteComparisonText.js";
 import Tesla from "../svgs/tesla.svg";
+import House from "../svgs/house.svg";
 
 export default function PageFour(props) {
   const { multiplier } = props;
   const teslaCost = 157490;
+  const houseCost = 334000;
 
   const chooseTeslaText = () => {
     const bezosCost = (teslaCost / multiplier).toFixed(2);
@@ -41,20 +41,23 @@ export default function PageFour(props) {
           />
           <h2>
             A fully-loaded, Tesla Model S would set you back
-            <strong> $157,490</strong>. {chooseTeslaText()}.
+            <strong> $157,490</strong>. {chooseTeslaText()}!
           </h2>
         </div>
 
         <div className="column flex-column col-1-margin">
           <img
-            id={chooseLatteComparisonImage(multiplier).id}
-            className="page-two-image"
-            src={chooseLatteComparisonImage(multiplier).src}
-            alt={chooseLatteComparisonImage(multiplier).alt}
+            id="house"
+            className="page-four-image"
+            src={House}
+            alt="A house"
           />
           <h2>
-            For the relative cost of a Dunkin' Donuts <strong>$5</strong> latte,
-            Jeff Bezos could buy {chooseLatteComparisonText(multiplier)}
+            In 2020, the median price for a new home in the United States was
+            <strong> $334,000</strong>.
+            <br />
+            Compared to your salary, Jeff Bezos could buy an average house for
+            <strong> ${(houseCost / multiplier).toFixed(2)}</strong>.
           </h2>
         </div>
       </div>
