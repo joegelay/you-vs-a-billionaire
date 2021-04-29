@@ -46,7 +46,9 @@ export default function PageThree(props) {
           />
           <h2>
             How about the joy of finding a forgotten <strong>$20</strong> in
-            your pocket? Bezos would have to find
+            your pocket?
+            <br />
+            Bezos would have to find
             <strong> ${(multiplier * 20).toLocaleString()}</strong> to feel that
             same excitement.
           </h2>

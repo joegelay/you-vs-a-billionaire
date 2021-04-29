@@ -99,9 +99,12 @@ html {
   background-color: var(--gray-color);
 }
 
-.page-two,
-.page-three {
+.page-two {
   justify-content: space-evenly;
+}
+
+.page-three {
+  justify-content: flex-end;
 }
 
 p {
@@ -184,6 +187,7 @@ strong {
 h2,
 h3 {
   margin: 1rem 0;
+  line-height: 1.5;
 }
 
 .page-two-image {
