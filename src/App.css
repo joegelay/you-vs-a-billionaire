@@ -190,7 +190,9 @@ h3 {
   line-height: 1.5;
 }
 
-.page-two-image {
+.page-two-image,
+.page-three-image,
+.page-four-image {
   max-width: 250px;
 }
 
