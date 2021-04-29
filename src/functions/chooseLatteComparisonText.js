@@ -1,31 +1,27 @@
-export default function chooseParkingComparisonText(multiplier) {
-  const parking = 0.25;
+export default function chooseLatteComparisonText(multiplier) {
+  const latte = 5;
 
-  const rollsRoyce = 315000;
-  const audiR8 = 150000;
-  const hondaCivic = 22000;
-  const macBookPro = 1500;
+  const dunkin = 1367350;
+  const villa = 350000;
+  const espressoMachine = 10000;
 
-  const bezosRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
-  const bezosAudiAmount = Math.floor((multiplier * parking) / audiR8);
-  const bezosCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
-  const bezosMacBookAmount = Math.floor((multiplier * parking) / macBookPro);
+  const bezosDunkinAmount = Math.floor((multiplier * latte) / dunkin);
+  const bezosVillaAmount = Math.floor((multiplier * latte) / villa);
+  const bezosEspressoAmount = Math.floor(
+    (multiplier * latte) / espressoMachine
+  );
 
-  if (bezosRollsAmount) {
+  if (bezosDunkinAmount) {
     return ` ${
-      bezosRollsAmount > 1 ? bezosRollsAmount : "a"
-    } Rolls Royce Ghost${bezosRollsAmount > 1 ? "s" : ""}.`;
-  } else if (bezosAudiAmount) {
-    return ` ${bezosAudiAmount > 1 ? bezosAudiAmount : "an"} Audi R8${
-      bezosAudiAmount > 1 ? "s" : ""
-    }.`;
-  } else if (bezosCivicAmount) {
-    return ` ${bezosCivicAmount > 1 ? bezosCivicAmount : "a"} Honda Civic${
-      bezosCivicAmount > 1 ? "s" : ""
-    }.`;
+      bezosDunkinAmount > 1 ? bezosDunkinAmount.toLocaleString() : "a"
+    } Dunkin' Donuts franchise${bezosDunkinAmount > 1 ? "s" : ""}.`;
+  } else if (bezosVillaAmount) {
+    return ` ${bezosVillaAmount > 1 ? bezosVillaAmount : "a"} villa${
+      bezosVillaAmount > 1 ? "s" : ""
+    } in Tuscany, Italy.`;
   } else {
     return ` ${
-      bezosMacBookAmount > 1 ? bezosMacBookAmount : "an"
-    } Apple MacBook Pro${bezosMacBookAmount > 1 ? "s" : ""}.`;
+      bezosEspressoAmount > 1 ? bezosEspressoAmount : "a"
+    } $10,000 espresso machine${bezosEspressoAmount > 1 ? "s" : ""}.`;
   }
 }

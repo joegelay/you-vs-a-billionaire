@@ -1,4 +1,4 @@
-import DumpMoney from "../dump-money.svg";
+import MoneyPockets from "../money-pockets.svg";
 import ScrollDown from "../scroll-down.svg";
 import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
 import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
@@ -20,8 +20,7 @@ export default function PageThree(props) {
           />
           <h2>
             You putting <strong>$0.25</strong> in a parking meter is like Bezos
-            buying
-            {chooseParkingComparisonText(multiplier)}
+            buying {chooseParkingComparisonText(multiplier)}
           </h2>
         </div>
 
@@ -33,23 +32,23 @@ export default function PageThree(props) {
             alt={chooseLatteComparisonImage(multiplier).alt}
           />
           <h2>
-            For the relative cost of a $5 latte at Dunkin' Donuts, Jeff Bezos
-            could buy
-            {chooseLatteComparisonText(multiplier)}
+            For the relative cost of a Dunkin' Donuts <strong>$5</strong> latte,
+            Jeff Bezos could buy {chooseLatteComparisonText(multiplier)}
           </h2>
         </div>
 
         <div className="column flex-column col-1-margin">
           <img
-            id="dump-money"
+            id="money-pockets"
             className="page-two-image"
-            src={DumpMoney}
-            alt="A person throwing around money"
+            src={MoneyPockets}
+            alt="A person's pockets overflowing with money."
           />
           <h2>
-            In other words, you spending <strong>$1</strong>, or Bezos spending
-            <strong> ${multiplier.toLocaleString()}</strong>, puts the same dent
-            in your wallets.
+            How about the joy of finding a forgotten <strong>$20</strong> in
+            your pocket? Bezos would have to find
+            <strong> ${(multiplier * 20).toLocaleString()}</strong> to feel that
+            same excitement.
           </h2>
         </div>
       </div>
