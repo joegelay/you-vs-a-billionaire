@@ -1,8 +1,9 @@
 import DumpMoney from "../dump-money.svg";
-import Increase from "../increase.svg";
 import ScrollDown from "../scroll-down.svg";
 import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
 import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
+import chooseLatteComparisonImage from "../functions/chooseLatteComparisonImage.js";
+import chooseLatteComparisonText from "../functions/chooseLatteComparisonText.js";
 
 export default function PageThree(props) {
   const { multiplier } = props;
@@ -26,16 +27,15 @@ export default function PageThree(props) {
 
         <div className="column flex-column col-1-margin">
           <img
-            id="increase"
+            id={chooseLatteComparisonImage(multiplier).id}
             className="page-two-image"
-            src={Increase}
-            alt="A chart show money going up"
+            src={chooseLatteComparisonImage(multiplier).src}
+            alt={chooseLatteComparisonImage(multiplier).alt}
           />
           <h2>
-            {/* add in uptick animation here */}
-            Jeff Bezos's annual earnings are
-            <span className="uptick"> {multiplier.toLocaleString()}</span>
-            &nbsp;times larger than yours.
+            For the relative cost of a $5 latte at Dunkin' Donuts, Jeff Bezos
+            could buy
+            {chooseLatteComparisonText(multiplier)}
           </h2>
         </div>
 
