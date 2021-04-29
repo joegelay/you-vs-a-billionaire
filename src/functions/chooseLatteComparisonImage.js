@@ -7,13 +7,9 @@ export default function chooseLatteComparisonImage(multiplier) {
 
   const dunkin = 1367350;
   const villa = 350000;
-  //   const espressoMachine = 10000;
 
   const bezosDunkinAmount = Math.floor((multiplier * latte) / dunkin);
   const bezosVillaAmount = Math.floor((multiplier * latte) / villa);
-  //   const bezosEspressoAmount = Math.floor(
-  //     (multiplier * latte) / espressoMachine
-  //   );
 
   const result = {};
 

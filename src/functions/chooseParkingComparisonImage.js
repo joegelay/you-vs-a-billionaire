@@ -9,12 +9,10 @@ export default function chooseParkingComparisonImage(multiplier) {
   const rollsRoyce = 315000;
   const audiR8 = 150000;
   const hondaCivic = 22000;
-  // const macBookPro = 1500;
 
   const bezosRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
   const bezosAudiAmount = Math.floor((multiplier * parking) / audiR8);
   const bezosCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
-  // const bezosMacBookAmount = Math.floor((multiplier * parking) / macBookPro);
 
   const result = {};
 
