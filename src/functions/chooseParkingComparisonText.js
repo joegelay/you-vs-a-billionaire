@@ -13,7 +13,7 @@ export default function chooseParkingComparisonText(multiplier) {
 
   if (bezosRollsAmount) {
     return ` ${
-      bezosRollsAmount > 1 ? bezosRollsAmount : "a"
+      bezosRollsAmount > 1 ? bezosRollsAmount.toLocaleString() : "a"
     } Rolls Royce Ghost${bezosRollsAmount > 1 ? "s" : ""}.`;
   } else if (bezosAudiAmount) {
     return ` ${bezosAudiAmount > 1 ? bezosAudiAmount : "an"} Audi R8${
