@@ -35,9 +35,9 @@ export default function PageFour(props) {
       <div className="row flex-row">
         <div className="column flex-column">
           <h3>
-            We can also look at these spending power comparisons in reverse...
+            We could also look at what BIG purchases for you would feel like to
+            Jeff Bezos...
           </h3>
-          <h3>What would BIG purchases for you feel like to Jeff Bezos?</h3>
         </div>
       </div>
 
