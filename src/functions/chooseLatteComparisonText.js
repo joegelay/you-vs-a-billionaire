@@ -14,7 +14,9 @@ export default function chooseLatteComparisonText(multiplier) {
   if (bezosDunkinAmount) {
     return ` ${
       bezosDunkinAmount > 1 ? bezosDunkinAmount.toLocaleString() : "a"
-    } Dunkin' Donuts franchise${bezosDunkinAmount > 1 ? "s" : ""}.`;
+    } Dunkin'${String.fromCharCode(160)}Donuts franchise${
+      bezosDunkinAmount > 1 ? "s" : ""
+    }.`;
   } else if (bezosVillaAmount) {
     return ` ${bezosVillaAmount > 1 ? bezosVillaAmount : "a"} villa${
       bezosVillaAmount > 1 ? "s" : ""

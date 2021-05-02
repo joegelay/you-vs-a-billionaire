@@ -4,8 +4,8 @@ export default function PageTen() {
       <div className="row flex-row">
         <div className="column flex-column">
           <h1>
-            You might not be Billionaire Bezos, but perhaps you're realizing how
-            relatively rich you are to so many others.
+            You might not be Billionaire Bezos, but you are extraordinarily rich
+            to so many others.
           </h1>
           <h2>
             Want to learn more about how you can help improve the lives of
