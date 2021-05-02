@@ -1,5 +1,5 @@
 import Bezos from "../svgs/bezos.svg";
-import SalaryInput from "./SalaryInput";
+import SalaryInput from "../components/SalaryInput";
 
 export default function PageOne(props) {
   const { salary, setSalary, setFormattedSalary } = props;
