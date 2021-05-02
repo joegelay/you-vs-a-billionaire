@@ -1,6 +1,5 @@
 import DumpMoney from "../svgs/dump-money.svg";
 import Increase from "../svgs/increase.svg";
-import ScrollDown from "../svgs/scroll-down.svg";
 
 export default function PageTwo(props) {
   const { multiplier } = props;
@@ -44,11 +43,6 @@ export default function PageTwo(props) {
             To truly fathom the difference between your spending powers, let's
             take a look at a few examples...
           </h3>
-          <img
-            className="scroll-down"
-            src={ScrollDown}
-            alt="Scroll down arrows"
-          />
         </div>
       </div>
     </div>

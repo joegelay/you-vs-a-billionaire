@@ -1,5 +1,4 @@
 import MoneyPockets from "../svgs/money-pockets.svg";
-import ScrollDown from "../svgs/scroll-down.svg";
 import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
 import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
 import chooseLatteComparisonImage from "../functions/chooseLatteComparisonImage.js";
@@ -52,16 +51,6 @@ export default function PageThree(props) {
             <strong> ${(multiplier * 20).toLocaleString()}</strong> to feel that
             same excitement.
           </h2>
-        </div>
-      </div>
-
-      <div className="row flex-row">
-        <div className="column flex-column">
-          <img
-            className="scroll-down"
-            src={ScrollDown}
-            alt="Scroll down arrows"
-          />
         </div>
       </div>
     </div>
