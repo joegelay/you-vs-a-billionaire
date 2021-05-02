@@ -10,6 +10,7 @@ import PageSeven from "./pages/PageSeven";
 import PageEight from "./pages/PageEight";
 import PageNine from "./pages/PageNine";
 import PageTen from "./pages/PageTen";
+import Footer from "./components/Footer";
 
 function App() {
   const [salary, setSalary] = useState();
@@ -55,6 +56,7 @@ function App() {
         ""
       )}
       <PageTen></PageTen>
+      <Footer></Footer>
     </div>
   );
 }
