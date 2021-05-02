@@ -36,7 +36,7 @@ export default function PageFour(props) {
         <div className="column flex-column">
           <h3>
             We could also look at what BIG purchases for you would feel like to
-            Jeff Bezos...
+            Jeff&nbsp;Bezos...
           </h3>
         </div>
       </div>
