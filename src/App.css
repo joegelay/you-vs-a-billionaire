@@ -245,3 +245,36 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.dotted {
+  border-bottom: 1px dotted;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: [first] 35% auto [last] 35%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--green-color);
+  color: white;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.left,
+.middle,
+.right {
+  margin: auto;
+  text-align: center;
+}

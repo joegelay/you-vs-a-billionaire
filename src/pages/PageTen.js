@@ -4,8 +4,8 @@ export default function PageTen() {
       <div className="row flex-row">
         <div className="column flex-column">
           <h1>
-            While you might not be Billionaire Bezos, perhaps you're realizing
-            how relatively rich you are to so many others.
+            You might not be Billionaire Bezos, but perhaps you're realizing how
+            relatively rich you are to so many others.
           </h1>
           <h2>
             Want to learn more about how you can help improve the lives of
@@ -20,7 +20,8 @@ export default function PageTen() {
             >
               GiveWell.org
             </a>{" "}
-            to donate to the planet's most effective charities.
+            to donate to the planet's most effective{" "}
+            <span className="dotted">charities</span>.
           </h2>
         </div>
       </div>
