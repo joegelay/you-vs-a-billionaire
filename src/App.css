@@ -192,7 +192,8 @@ h3 {
 
 .page-two-image,
 .page-three-image,
-.page-four-image {
+.page-four-image,
+.page-eight-image {
   max-width: 250px;
 }
 
@@ -216,4 +217,31 @@ h3 {
 img {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+.black {
+  color: black;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+.globe-background {
+  position: relative;
+  z-index: 1;
+}
+
+.globe-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  background: url(./svgs/globe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
