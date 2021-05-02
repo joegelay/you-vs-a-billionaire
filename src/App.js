@@ -6,6 +6,8 @@ import PageThree from "./components/PageThree";
 import PageFour from "./components/PageFour";
 import PageFive from "./components/PageFive";
 import PageSix from "./components/PageSix";
+import PageSeven from "./components/PageSeven";
+import PageEight from "./components/PageEight";
 
 function App() {
   const [salary, setSalary] = useState();
@@ -37,6 +39,8 @@ function App() {
       ></PageFour>
       <PageFive></PageFive>
       <PageSix></PageSix>
+      <PageSeven></PageSeven>
+      <PageEight></PageEight>
     </div>
   );
 }
