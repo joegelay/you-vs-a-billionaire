@@ -32,6 +32,21 @@ export default function PageEight() {
           </h2>
         </div>
       </div>
+      <div className="row flex-row">
+        <h2>
+          As William MacAskill writes in{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.effectivealtruism.org/doing-good-better/"
+          >
+            Doing Good Better
+          </a>
+          , "Because we are comparatively so rich, the amount by which we can
+          benefit others is vastly greater than the amount by which we can
+          benefit ourselves."
+        </h2>
+      </div>
     </div>
   );
 }

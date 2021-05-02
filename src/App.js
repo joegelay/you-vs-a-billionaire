@@ -1,19 +1,24 @@
 import "./App.css";
 import { useState } from "react";
-import PageOne from "./components/PageOne";
-import PageTwo from "./components/PageTwo";
-import PageThree from "./components/PageThree";
-import PageFour from "./components/PageFour";
-import PageFive from "./components/PageFive";
-import PageSix from "./components/PageSix";
-import PageSeven from "./components/PageSeven";
-import PageEight from "./components/PageEight";
+import PageOne from "./pages/PageOne";
+import PageTwo from "./pages/PageTwo";
+import PageThree from "./pages/PageThree";
+import PageFour from "./pages/PageFour";
+import PageFive from "./pages/PageFive";
+import PageSix from "./pages/PageSix";
+import PageSeven from "./pages/PageSeven";
+import PageEight from "./pages/PageEight";
+import PageNine from "./pages/PageNine";
+import PageTen from "./pages/PageTen";
 
 function App() {
   const [salary, setSalary] = useState();
   const [formattedSalary, setFormattedSalary] = useState();
 
+  const extremePovertyWage = 693.5;
+
   const multiplier = Math.round(75000000000 / salary);
+  const povertyMultiplier = Math.round(salary / extremePovertyWage);
 
   return (
     <div className="app">
@@ -41,6 +46,15 @@ function App() {
       <PageSix></PageSix>
       <PageSeven></PageSeven>
       <PageEight></PageEight>
+      {salary >= 5000 ? (
+        <PageNine
+          formattedSalary={formattedSalary}
+          povertyMultiplier={povertyMultiplier}
+        ></PageNine>
+      ) : (
+        ""
+      )}
+      <PageTen></PageTen>
     </div>
   );
 }
