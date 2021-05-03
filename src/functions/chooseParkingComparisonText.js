@@ -1,3 +1,5 @@
+import ReactTooltip from "react-tooltip";
+
 export default function chooseParkingComparisonText(multiplier) {
   const parking = 0.25;
 
@@ -24,8 +26,16 @@ export default function chooseParkingComparisonText(multiplier) {
       bezosCivicAmount > 1 ? "s" : ""
     }.`;
   } else {
-    return ` ${
-      bezosMacBookAmount > 1 ? bezosMacBookAmount : "an"
-    } Apple MacBook Pro${bezosMacBookAmount > 1 ? "s" : ""}.`;
+    return (
+      <span>
+        {bezosMacBookAmount > 1 ? bezosMacBookAmount : "an"}{" "}
+        <span className="dotted" data-tip="MacBook Pro valued at $1,5000">
+          Apple&nbsp;MacBook&nbsp;Pro
+          {bezosMacBookAmount > 1 ? "s" : ""}
+          <ReactTooltip />
+        </span>
+        .
+      </span>
+    );
   }
 }
