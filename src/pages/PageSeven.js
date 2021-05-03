@@ -1,3 +1,5 @@
+import ReactTooltip from "react-tooltip";
+
 export default function PageSeven() {
   return (
     <div className="page page-seven globe-background">
@@ -9,13 +11,23 @@ export default function PageSeven() {
             <strong className="black">10%&nbsp;of&nbsp;the&nbsp;world</strong>,
             or over{" "}
             <strong className="black">750&nbsp;million&nbsp;people</strong>,
-            live in extreme poverty on <strong>$1.90</strong> or less a day.
+            live in extreme poverty on{" "}
+            <strong
+              className="dotted"
+              data-tip="This figure is adjusted for factors such as exchange rate,
+              purchasing power, or farmers that can subside partially off of their
+              own food production."
+            >
+              $1.90
+            </strong>{" "}
+            or less a day.
+            <ReactTooltip effect="solid" place="bottom" />
           </h3>
-          <h5>
+          {/* <h5>
             * This figure is adjusted for factors such as exchange rate,
             purchasing power, or farmers that can subside partially off of their
             own food production.
-          </h5>
+          </h5> */}
         </div>
       </div>
       <div className="row flex-row"></div>
