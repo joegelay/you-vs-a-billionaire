@@ -22,8 +22,7 @@ export default function PageTen() {
             >
               GiveWell.org
             </a>{" "}
-            to donate to the planet's most effective{" "}
-            <span className="dotted">charities</span>.
+            to donate to the planet's most effective charities.
           </h2>
           <h3>Share this page:</h3>
           <SocialShareButtons></SocialShareButtons>
