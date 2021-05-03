@@ -1,3 +1,5 @@
+import SocialShareButtons from "../components/SocialShareButtons";
+
 export default function PageTen() {
   return (
     <div className="page page-ten globe-background">
@@ -23,6 +25,8 @@ export default function PageTen() {
             to donate to the planet's most effective{" "}
             <span className="dotted">charities</span>.
           </h2>
+          <h3>Share this page:</h3>
+          <SocialShareButtons></SocialShareButtons>
         </div>
       </div>
     </div>
