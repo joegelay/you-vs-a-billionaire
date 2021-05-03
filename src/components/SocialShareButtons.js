@@ -17,12 +17,11 @@ export default function SocialShareButtons() {
   const iconSize = 50;
   const url = "http://youvsabillionaire.com";
   const emailSubj = "Check out this website...";
-  const emailBody = "You vs. A Billionaire: ";
   const quote =
     "In 2020, Jeff Bezos's net worth grew by an estimated $75 billion. See how you stack up.";
   return (
     <div className="row flex-row share-buttons-wrapper">
-      <EmailShareButton url={url} subject={emailSubj} body={emailBody}>
+      <EmailShareButton url={url} subject={emailSubj} body={quote}>
         <EmailIcon size={iconSize} round="true"></EmailIcon>
       </EmailShareButton>
       <FacebookShareButton url={url} quote={quote}>
