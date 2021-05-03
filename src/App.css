@@ -277,3 +277,7 @@ h5 {
   margin: auto;
   text-align: center;
 }
+
+.share-buttons-wrapper button {
+  margin: 0 0.25rem;
+}
