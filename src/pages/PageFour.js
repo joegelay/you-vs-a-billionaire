@@ -1,9 +1,10 @@
 import Tesla from "../svgs/tesla.svg";
 import House from "../svgs/house.svg";
+import ReactTooltip from "react-tooltip";
 
 export default function PageFour(props) {
   const { multiplier } = props;
-  const teslaCost = 157490;
+  const teslaCost = 158990;
   const houseCost = 334000;
 
   const chooseTeslaText = () => {
@@ -50,8 +51,15 @@ export default function PageFour(props) {
             alt="A Tesla car"
           />
           <h2>
-            A fully-loaded, Tesla Model S would set you back
-            <strong> $157,490</strong>. {chooseTeslaText()}!
+            A fully-loaded, Tesla Model S would set you back{" "}
+            <strong
+              className="dotted"
+              data-tip="MSRP with all upgrades selected on Tesla.com"
+            >
+              ${teslaCost.toLocaleString()}
+            </strong>
+            . {chooseTeslaText()}!
+            <ReactTooltip effect="solid" place="bottom" />
           </h2>
         </div>
 
@@ -63,8 +71,15 @@ export default function PageFour(props) {
             alt="A house"
           />
           <h2>
-            In 2020, the median price for a new home in the United States was
-            <strong> $334,000</strong>.
+            In 2020, the median home listing in the United States was{" "}
+            <strong
+              className="dotted"
+              data-tip="Data sourced from Realtor.com as of December, 2020"
+            >
+              ${houseCost.toLocaleString()}
+            </strong>
+            <ReactTooltip effect="solid" place="bottom" />
+            .
             <br />
             Compared to your salary, Jeff Bezos could buy a house for
             {chooseHouseText()}.
