@@ -190,7 +190,13 @@ input[type="text"]:focus {
   border: 0 none;
   cursor: pointer;
   color: var(--dark-gray-color);
-  font-size: 0.8rem;
+  font-size: 1.01rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .submit {
+    font-size: 1.05rem;
+  }
 }
 
 .submit:hover {
