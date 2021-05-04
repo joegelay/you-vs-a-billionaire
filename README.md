@@ -10,7 +10,7 @@ I've thought a lot about wealth inequality in recenty years after serving as a P
 
 ## Inspiration
 
-You Vs. A Billionaire was heavily inspried by Brad Templeton's article - [Bill Gates Wealth Index](https://www.templetons.com/brad/billg.html). Reading Brad's article is one of my earliest internet memories. It has stuck with me since I first discovered it over a dial-up AOL connection.
+You Vs. A Billionaire was heavily inspried by Brad Templeton's article - [Bill Gates Wealth Index](https://www.templetons.com/brad/billg.html). Reading Brad's article is one of my earliest internet memories. It has stuck with me ever since I first discovered it over a dial-up AOL connection.
 
 As mentioned on the site, You Vs. A Billionaire was of course inspired by William MacAskill and the Effective Altruism movement as well.
 
