@@ -48,7 +48,7 @@ export default function PageEight() {
         </div>
       </div>
       <div className="row flex-row">
-        <blockquote class="callout quote EN">
+        <blockquote className="callout quote EN">
           Because we are comparatively so rich, the amount by which we can
           benefit others is vastly greater than the amount by which we can
           benefit ourselves.

@@ -5,7 +5,7 @@ export default function PageTwo(props) {
   const { multiplier } = props;
 
   return (
-    <div className="page page-two">
+    <div id="page-two" className="page page-two">
       <div className="row flex-row">
         <div className="column flex-column col-1-margin">
           <img
