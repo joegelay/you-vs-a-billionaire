@@ -4,11 +4,11 @@ export default function PageTen() {
   return (
     <div className="page page-ten globe-background">
       <div className="row flex-row">
-        <div className="column flex-column">
-          <h1>
+        <div className="column flex-column scroll-message">
+          <h2>
             You might not be Billionaire Bezos, but you are extraordinarily rich
             to so many others.
-          </h1>
+          </h2>
           <h2>
             Want to learn more about how you can help improve the lives of
             millions?
@@ -24,7 +24,7 @@ export default function PageTen() {
             </a>{" "}
             to donate to the planet's most effective charities.
           </h2>
-          <h3>Share this page:</h3>
+          <h3 className="scroll-message">Share this page:</h3>
           <SocialShareButtons></SocialShareButtons>
         </div>
       </div>

@@ -1,16 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageTwo";
-import PageThree from "./pages/PageThree";
-import PageFour from "./pages/PageFour";
-import PageFive from "./pages/PageFive";
-import PageSix from "./pages/PageSix";
-import PageSeven from "./pages/PageSeven";
-import PageEight from "./pages/PageEight";
-import PageNine from "./pages/PageNine";
-import PageTen from "./pages/PageTen";
-import Footer from "./components/Footer";
+import ContentPages from "./components/ContentPages";
 
 function App() {
   const [salary, setSalary] = useState();
@@ -28,35 +19,16 @@ function App() {
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
       ></PageOne>
-      <PageTwo
-        salary={salary}
-        formattedSalary={formattedSalary}
-        multiplier={multiplier}
-      ></PageTwo>
-      <PageThree
-        salary={salary}
-        formattedSalary={formattedSalary}
-        multiplier={multiplier}
-      ></PageThree>
-      <PageFour
-        salary={salary}
-        formattedSalary={formattedSalary}
-        multiplier={multiplier}
-      ></PageFour>
-      <PageFive></PageFive>
-      <PageSix></PageSix>
-      <PageSeven></PageSeven>
-      <PageEight></PageEight>
-      {salary >= 5000 ? (
-        <PageNine
+      {salary ? (
+        <ContentPages
+          salary={salary}
           formattedSalary={formattedSalary}
+          multiplier={multiplier}
           povertyMultiplier={povertyMultiplier}
-        ></PageNine>
+        ></ContentPages>
       ) : (
         ""
       )}
-      <PageTen></PageTen>
-      <Footer></Footer>
     </div>
   );
 }

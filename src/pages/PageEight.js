@@ -48,19 +48,25 @@ export default function PageEight() {
         </div>
       </div>
       <div className="row flex-row">
-        <h2>
-          "Because we are comparatively so rich, the amount by which we can
+        <blockquote class="callout quote EN">
+          Because we are comparatively so rich, the amount by which we can
           benefit others is vastly greater than the amount by which we can
-          benefit ourselves." -- William MacAskill, co-founder of the{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.effectivealtruism.org/"
-          >
-            Effective Altruism
-          </a>{" "}
-          movement.
-        </h2>
+          benefit ourselves.
+          <br />
+          <br />
+          <cite>
+            {" "}
+            -- William MacAskill, co-founder of the{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.effectivealtruism.org/"
+            >
+              Effective Altruism
+            </a>{" "}
+            movement.
+          </cite>
+        </blockquote>
       </div>
     </div>
   );

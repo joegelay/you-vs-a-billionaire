@@ -35,7 +35,7 @@ export default function PageFour(props) {
     <div className="page page-four">
       <div className="row flex-row">
         <div className="column flex-column">
-          <h3>
+          <h3 className="scroll-message">
             We could also look at what BIG purchases for you would feel like to
             Jeff&nbsp;Bezos...
           </h3>

@@ -39,7 +39,7 @@ export default function PageTwo(props) {
 
       <div className="row flex-row">
         <div className="column flex-column">
-          <h3>
+          <h3 className="scroll-message">
             To truly fathom the difference between your spending powers, let's
             take a look at a few examples...
           </h3>
