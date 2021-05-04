@@ -4,7 +4,7 @@ export default function PageSeven() {
   return (
     <div className="page page-seven globe-background">
       <div className="row flex-row">
-        <div className="column flex-column">
+        <div data-aos="zoom-in-left" className="column flex-column">
           <h3>
             According to the World Bank, recent estimates for global poverty are
             that at least{" "}

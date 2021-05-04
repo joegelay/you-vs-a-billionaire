@@ -6,7 +6,10 @@ export default function PageNine(props) {
   return (
     <div className="page page-nine globe-background">
       <div className="row flex-row">
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in-left"
+          className="column flex-column col-1-margin"
+        >
           <h2>
             Compared to the <strong>{formattedSalary}</strong> that you earn per
             year...
@@ -22,7 +25,11 @@ export default function PageNine(props) {
         </div>
       </div>
       <div className="row flex-row">
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in-left"
+          data-aos-delay="500"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="latte"
             className="page-three-image"

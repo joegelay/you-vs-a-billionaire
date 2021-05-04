@@ -4,7 +4,7 @@ export default function PageTen() {
   return (
     <div className="page page-ten globe-background">
       <div className="row flex-row">
-        <div className="column flex-column scroll-message">
+        <div data-aos="fade-left" className="column flex-column scroll-message">
           <h2>
             You might not be Billionaire Bezos, but you are extraordinarily rich
             to so many others.
