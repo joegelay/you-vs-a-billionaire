@@ -78,10 +78,8 @@ export default function PageFour(props) {
             >
               ${houseCost.toLocaleString()}
             </strong>
-            <ReactTooltip effect="solid" place="bottom" />
-            .
-            <br />
-            Compared to your salary, Jeff Bezos could buy a house for
+            <ReactTooltip effect="solid" place="bottom" />. For Jeff Bezos,
+            that's
             {chooseHouseText()}.
           </h2>
         </div>

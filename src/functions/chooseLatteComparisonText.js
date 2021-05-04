@@ -21,7 +21,7 @@ export default function chooseLatteComparisonText(multiplier) {
           : "a "}
         <span
           className="dotted"
-          data-tip="Average costs for a new franchise are $1,367,350 according to DunkinFranchising.com"
+          data-tip="Average cost of a new franchise is $1,367,350 according to DunkinFranchising.com"
         >
           Dunkin'&nbsp;Donuts
           <ReactTooltip effect="solid" place="bottom" />
