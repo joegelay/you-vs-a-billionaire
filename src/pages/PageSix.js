@@ -3,7 +3,9 @@ export default function PageSix() {
     <div className="page page-six globe-background">
       <div className="row flex-row">
         <div className="column flex-column">
-          <h1>... but now let's look at you vs. the rest of the world.</h1>
+          <h1 className="scroll-message">
+            ... but now let's look at you vs. the rest of the world.
+          </h1>
         </div>
       </div>
     </div>

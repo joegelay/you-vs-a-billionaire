@@ -32,13 +32,13 @@ export default function PageNine(props) {
           <h2>
             Remember that <strong>$5</strong> latte from before?
           </h2>
-          <p>
+          <h2>
             While it might not seem like much, donating that <strong>$5</strong>{" "}
             to someone living in extreme poverty would benefit them the same way
             an extra{" "}
             <strong>${(povertyMultiplier * 5).toLocaleString()}</strong> would
             benefit you.
-          </p>
+          </h2>
         </div>
       </div>
     </div>
