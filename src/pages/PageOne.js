@@ -17,7 +17,7 @@ export default function PageOne(props) {
           <div className="flex-column opening-blurb">
             <p>
               In 2020, Jeff Bezos's net worth grew by an estimated{" "}
-              <strong>$75&nbsp;billion</strong>.
+              <strong className="bezos-worth">$75&nbsp;billion</strong>.
             </p>
 
             <p>Enter your annual income below to see how you stack&nbsp;up:</p>

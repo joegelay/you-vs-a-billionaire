@@ -6,7 +6,7 @@ export default function PageEight() {
   return (
     <div className="page page-eight globe-background">
       <div className="row flex-row">
-        <div className="column flex-column col-1-margin">
+        <div data-aos="flip-up" className="column flex-column col-1-margin">
           <img
             id="one-percent"
             className="page-eight-image"
@@ -28,7 +28,7 @@ export default function PageEight() {
           </h2>
         </div>
 
-        <div className="column flex-column col-1-margin">
+        <div data-aos="flip-up" className="column flex-column col-1-margin">
           <img
             id="five-percent"
             className="page-eight-image"
@@ -49,7 +49,11 @@ export default function PageEight() {
           </h2>
         </div>
       </div>
-      <div className="row flex-row">
+      <div
+        data-aos="zoom-in-left"
+        data-aos-delay="300"
+        className="row flex-row"
+      >
         <blockquote className="callout quote EN">
           Because we are comparatively so rich, the amount by which we can
           benefit others is vastly greater than the amount by which we can

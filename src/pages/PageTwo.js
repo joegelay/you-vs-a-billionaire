@@ -9,7 +9,7 @@ export default function PageTwo(props) {
       <div className="row flex-row">
         <div
           data-aos="zoom-in"
-          data-aos-delay="500"
+          data-aos-delay="250"
           className="column flex-column col-1-margin"
         >
           <img
@@ -19,16 +19,18 @@ export default function PageTwo(props) {
             alt="A chart show money going up"
           />
           <h2>
-            {/* add in uptick animation here */}
             Jeff Bezos's annual earnings are
-            <span className="uptick"> {multiplier.toLocaleString()}</span>
-            &nbsp;times larger than yours.
+            <span className="uptick">
+              {" "}
+              {multiplier.toLocaleString()}&nbsp;times
+            </span>{" "}
+            larger than yours.
           </h2>
         </div>
 
         <div
           data-aos="zoom-in"
-          data-aos-delay="1000"
+          data-aos-delay="500"
           className="column flex-column col-1-margin"
         >
           <img
@@ -47,7 +49,7 @@ export default function PageTwo(props) {
 
       <div className="row flex-row">
         <div className="column flex-column">
-          <h3 data-aos="fade" data-aos-delay="1500" className="scroll-message">
+          <h3 data-aos="fade" data-aos-delay="750" className="scroll-message">
             To truly fathom the difference between your spending powers, let's
             take a look at a few examples...
           </h3>
