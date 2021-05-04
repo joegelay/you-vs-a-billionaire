@@ -21,10 +21,11 @@ export default function chooseLatteComparisonText(multiplier) {
           : "a "}
         <span
           className="dotted"
+          data-for="dunkin"
           data-tip="Average cost of a new franchise is $1,367,350 according to DunkinFranchising.com"
         >
           Dunkin'&nbsp;Donuts
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="dunkin" effect="solid" place="bottom" />
         </span>{" "}
         franchise
         {bezosDunkinAmount > 1 ? "s" : ""}.
@@ -35,10 +36,14 @@ export default function chooseLatteComparisonText(multiplier) {
       <span>
         {" "}
         {bezosVillaAmount > 1 ? bezosVillaAmount : "a"}{" "}
-        <span className="dotted" data-tip="Cost of villa: $350,000">
+        <span
+          className="dotted"
+          data-tip="Cost of villa: $350,000"
+          data-for="villa"
+        >
           villa
           {bezosVillaAmount > 1 ? "s" : ""}
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="villa" effect="solid" place="bottom" />
         </span>{" "}
         in Tuscany, Italy.
       </span>

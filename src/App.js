@@ -1,9 +1,15 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PageOne from "./pages/PageOne";
 import ContentPages from "./components/ContentPages";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
+
   const [salary, setSalary] = useState();
   const [formattedSalary, setFormattedSalary] = useState();
 

@@ -20,10 +20,11 @@ export default function chooseParkingComparisonText(multiplier) {
         <span
           className="dotted"
           data-tip="Starting MSRP $311,900 according to TrueCar.com"
+          data-for="rolls-royce"
         >
           {" "}
           Rolls&nbsp;Royce&nbsp;Ghost{bezosRollsAmount > 1 ? "s" : ""}
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="rolls-royce" effect="solid" place="bottom" />
         </span>
         .
       </span>
@@ -34,11 +35,12 @@ export default function chooseParkingComparisonText(multiplier) {
         {bezosAudiAmount > 1 ? bezosAudiAmount : "an"}{" "}
         <span
           className="dotted"
+          data-for="audi"
           data-tip="Starting MSRP $142,700 according to TrueCar.com"
         >
           Audi&nbsp;R8
           {bezosAudiAmount > 1 ? "s" : ""}
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="audi" effect="solid" place="bottom" />
         </span>
         .
       </span>
@@ -49,10 +51,11 @@ export default function chooseParkingComparisonText(multiplier) {
         {bezosCivicAmount > 1 ? bezosCivicAmount : "a"}{" "}
         <span
           className="dotted"
+          data-for="civic"
           data-tip="Starting MSRP $21,250 according to TrueCar.com"
         >
           Honda Civic{bezosCivicAmount > 1 ? "s" : ""}
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="civic" effect="solid" place="bottom" />
         </span>
         .
       </span>
@@ -61,10 +64,14 @@ export default function chooseParkingComparisonText(multiplier) {
     return (
       <span>
         {bezosMacBookAmount > 1 ? bezosMacBookAmount : "an"}{" "}
-        <span className="dotted" data-tip="MacBook Pro valued at $1,500">
+        <span
+          className="dotted"
+          data-for="macbooks"
+          data-tip="MacBook Pro valued at $1,500"
+        >
           Apple&nbsp;MacBook&nbsp;Pro
           {bezosMacBookAmount > 1 ? "s" : ""}
-          <ReactTooltip effect="solid" place="bottom" />
+          <ReactTooltip id="macbooks" effect="solid" place="bottom" />
         </span>
         .
       </span>

@@ -34,7 +34,11 @@ export default function PageFour(props) {
   return (
     <div className="page page-four">
       <div className="row flex-row">
-        <div className="column flex-column">
+        <div
+          data-aos="zoom-in"
+          // data-aos-delay="500"
+          className="column flex-column"
+        >
           <h3 className="scroll-message">
             We could also look at what BIG purchases for you would feel like to
             Jeff&nbsp;Bezos...
@@ -43,7 +47,11 @@ export default function PageFour(props) {
       </div>
 
       <div className="row flex-row">
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in"
+          // data-aos-delay="500"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="tesla"
             className="page-four-image"
@@ -55,15 +63,20 @@ export default function PageFour(props) {
             <strong
               className="dotted"
               data-tip="MSRP with all upgrades selected on Tesla.com"
+              data-for="tesla"
             >
               ${teslaCost.toLocaleString()}
             </strong>
             . {chooseTeslaText()}!
-            <ReactTooltip effect="solid" place="bottom" />
+            <ReactTooltip id="tesla" effect="solid" place="bottom" />
           </h2>
         </div>
 
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in"
+          // data-aos-delay="1000"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="house"
             className="page-four-image"
@@ -74,12 +87,13 @@ export default function PageFour(props) {
             In 2020, the median home listing in the United States was{" "}
             <strong
               className="dotted"
+              data-for="home"
               data-tip="Data sourced from Realtor.com as of December, 2020"
             >
               ${houseCost.toLocaleString()}
             </strong>
-            <ReactTooltip effect="solid" place="bottom" />. For Jeff Bezos,
-            that's
+            <ReactTooltip id="home" effect="solid" place="bottom" />. For Jeff
+            Bezos, that's
             {chooseHouseText()}.
           </h2>
         </div>
