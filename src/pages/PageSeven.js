@@ -14,6 +14,7 @@ export default function PageSeven() {
             live in extreme poverty on{" "}
             <strong
               className="dotted"
+              data-for="poverty"
               data-tip="This figure is adjusted for factors such as exchange rate,
               purchasing power, or farmers that can subside partially off of their
               own food production."
@@ -21,7 +22,7 @@ export default function PageSeven() {
               $1.90
             </strong>{" "}
             or less a day.
-            <ReactTooltip effect="solid" place="bottom" />
+            <ReactTooltip id="poverty" effect="solid" place="bottom" />
           </h3>
           {/* <h5>
             * This figure is adjusted for factors such as exchange rate,

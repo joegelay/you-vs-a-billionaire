@@ -10,7 +10,7 @@ export default function PageThree(props) {
   return (
     <div className="page page-three">
       <div className="row flex-row align-start">
-        <div className="column flex-column col-1-margin">
+        <div data-aos="flip-left" className="column flex-column col-1-margin">
           <img
             id={chooseParkingComparisonImage(multiplier).id}
             className="page-three-image"
@@ -23,7 +23,11 @@ export default function PageThree(props) {
           </h2>
         </div>
 
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="flip-left"
+          data-aos-delay="500"
+          className="column flex-column col-1-margin"
+        >
           <img
             id={chooseLatteComparisonImage(multiplier).id}
             className="page-three-image"
@@ -36,7 +40,11 @@ export default function PageThree(props) {
           </h2>
         </div>
 
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="flip-left"
+          data-aos-delay="1000"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="money-pockets"
             className="page-three-image"

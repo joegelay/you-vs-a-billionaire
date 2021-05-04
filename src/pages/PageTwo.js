@@ -7,7 +7,11 @@ export default function PageTwo(props) {
   return (
     <div id="page-two" className="page page-two">
       <div className="row flex-row">
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="increase"
             className="page-two-image"
@@ -22,7 +26,11 @@ export default function PageTwo(props) {
           </h2>
         </div>
 
-        <div className="column flex-column col-1-margin">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+          className="column flex-column col-1-margin"
+        >
           <img
             id="dump-money"
             className="page-two-image"
@@ -39,7 +47,7 @@ export default function PageTwo(props) {
 
       <div className="row flex-row">
         <div className="column flex-column">
-          <h3 className="scroll-message">
+          <h3 data-aos="fade" data-aos-delay="1500" className="scroll-message">
             To truly fathom the difference between your spending powers, let's
             take a look at a few examples...
           </h3>
