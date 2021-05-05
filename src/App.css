@@ -407,3 +407,8 @@ a {
 a:hover {
   color: var(--orange-color);
 }
+
+.__react_component_tooltip {
+  width: calc(100% - 50px);
+  max-width: 350px;
+}
