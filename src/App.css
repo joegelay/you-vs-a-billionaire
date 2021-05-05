@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
   --light-gray-color: #e1e3d9;
@@ -11,7 +11,7 @@
 
 html {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -134,7 +134,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
   font-weight: bold;
   font-size: 4rem;
   color: var(--green-color);
@@ -147,7 +147,7 @@ header {
     font-size: 2rem;
   }
 
-  input[type="text"] {
+  input[type='text'] {
     width: 30%;
   }
 }
@@ -176,7 +176,7 @@ header > p {
   margin-bottom: 2rem;
 }
 
-input[type="text"] {
+input[type='text'] {
   padding: 5px;
   border: 2px solid var(--light-gray-color);
   color: var(--dark-gray-color);
@@ -186,12 +186,12 @@ input[type="text"] {
 }
 
 @media only screen and (max-width: 500px) {
-  input[type="text"] {
+  input[type='text'] {
     width: 30%;
   }
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   border-color: var(--dark-gray-color);
   outline: none;
 }
@@ -270,10 +270,16 @@ header h1 {
 }
 
 .scroll-message {
-  font-family: "Cormotant";
+  font-family: 'Cormotant';
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: -3rem;
+}
+
+.end-page {
+  font-family: 'Cormotant';
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -311,7 +317,7 @@ h5 {
 }
 
 .globe-background::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -421,13 +427,13 @@ blockquote.quote:after {
 }
 
 blockquote.EN:before {
-  content: "\f10d";
+  content: '\f10d';
   top: -12px;
   margin-right: -20px;
   right: 100%;
 }
 blockquote.EN:after {
-  content: "\f10e";
+  content: '\f10e';
   margin-left: -20px;
   left: 100%;
   top: auto;

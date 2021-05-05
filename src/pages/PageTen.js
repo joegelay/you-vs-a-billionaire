@@ -1,10 +1,10 @@
-import SocialShareButtons from "../components/SocialShareButtons";
+import SocialShareButtons from '../components/SocialShareButtons';
 
 export default function PageTen() {
   return (
     <div className="page page-ten globe-background">
       <div className="row flex-row">
-        <div data-aos="fade-left" className="column flex-column scroll-message">
+        <div data-aos="fade-left" className="column flex-column end-page">
           <h2>
             You might not be Billionaire Bezos, but you are extraordinarily rich
             to so many others.
@@ -14,17 +14,17 @@ export default function PageTen() {
             millions?
           </h2>
           <h2>
-            Visit{" "}
+            Visit{' '}
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.givewell.org/"
             >
               GiveWell.org
-            </a>{" "}
+            </a>{' '}
             to donate to the planet's most effective charities.
           </h2>
-          <h3 className="scroll-message">Share this page:</h3>
+          <h3 className="">Share this page:</h3>
           <SocialShareButtons></SocialShareButtons>
         </div>
       </div>
