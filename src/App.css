@@ -15,6 +15,11 @@ html {
   text-align: center;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -139,17 +144,11 @@ header {
 
 @media only screen and (max-width: 500px) {
   header {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   input[type="text"] {
     width: 30%;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  header {
-    font-size: 2rem;
   }
 }
 
@@ -158,6 +157,15 @@ header > p {
   margin-top: 10px;
   margin-bottom: -10px;
   color: var(--green-color);
+}
+
+@media only screen and (max-width: 500px) {
+  header > p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: var(--green-color);
+  }
 }
 
 .salary-input {
@@ -245,6 +253,12 @@ header h1 {
 .page-four-image,
 .page-eight-image {
   max-width: 250px;
+}
+
+@media only screen and (max-width: 500px) {
+  .page-eight-image {
+    margin-top: 6rem;
+  }
 }
 
 .col-1-margin {
@@ -340,12 +354,19 @@ h5 {
 .right {
   margin: auto;
   text-align: center;
+  line-height: 1.3;
 }
 
 .share-buttons-wrapper button {
   margin: 0 0.25rem;
   transition: all 0.2s ease-in-out;
   outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .share-buttons-wrapper button {
+    margin: 0.5rem;
+  }
 }
 
 .share-buttons-wrapper button:hover {
@@ -358,6 +379,16 @@ blockquote.quote {
   padding: 1.5rem 1.5rem;
   width: 80%; /* create space for the quotes */
   margin: 1rem auto 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  blockquote.quote {
+    position: relative;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    width: 80%;
+    margin: 6rem auto 2rem;
+  }
 }
 
 blockquote.EN {
