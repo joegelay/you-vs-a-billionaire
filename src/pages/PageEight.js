@@ -14,12 +14,12 @@ export default function PageEight() {
             alt="A pie chart showing 1 percent."
           />
           <h2>
-            If you earn more than <strong>$52,000</strong> per year, you're in
+            If you earn more than <strong>$59,000</strong> per year, you're in
             the richest{" "}
             <strong
               className="black dotted"
               data-for="one-percent"
-              data-tip="“You Are The 1 Percent.” Doing Good Better: Effective Altruism and a Radical New Way to Make a Difference, by William MacAskill, Guardian Books, 2016, pp. 26–27."
+              data-tip="Data sourced from the 'How Rich Am I?' calculator at GivingWhatWeCan.org"
             >
               1&nbsp;percent
             </strong>{" "}
@@ -36,11 +36,11 @@ export default function PageEight() {
             alt="A pie chart showing 5 percent."
           />
           <h2>
-            If you earn at least <strong>$28,000</strong>, you're in the richest{" "}
+            If you earn at least <strong>$29,000</strong>, you're in the richest{" "}
             <strong
               className="black dotted"
               data-for="five-percent"
-              data-tip="“You Are The 1 Percent.” Doing Good Better: Effective Altruism and a Radical New Way to Make a Difference, by William MacAskill, Guardian Books, 2016, pp. 26–27."
+              data-tip="Data sourced from the 'How Rich Am I?' calculator at GivingWhatWeCan.org"
             >
               5&nbsp;percent
             </strong>

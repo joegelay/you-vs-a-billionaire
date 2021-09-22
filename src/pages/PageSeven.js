@@ -24,11 +24,6 @@ export default function PageSeven() {
             or less a day.
             <ReactTooltip id="poverty" effect="solid" place="bottom" />
           </h3>
-          {/* <h5>
-            * This figure is adjusted for factors such as exchange rate,
-            purchasing power, or farmers that can subside partially off of their
-            own food production.
-          </h5> */}
         </div>
       </div>
       <div className="row flex-row"></div>
