@@ -1,11 +1,11 @@
-import MoneyPockets from "../svgs/money-pockets.svg";
-import chooseParkingComparisonImage from "../functions/chooseParkingComparisonImage.js";
-import chooseParkingComparisonText from "../functions/chooseParkingComparisonText.js";
-import chooseLatteComparisonImage from "../functions/chooseLatteComparisonImage.js";
-import chooseLatteComparisonText from "../functions/chooseLatteComparisonText.js";
+import MoneyPockets from '../svgs/money-pockets.svg';
+import chooseParkingComparisonImage from '../functions/chooseParkingComparisonImage.js';
+import chooseParkingComparisonText from '../functions/chooseParkingComparisonText.js';
+import chooseLatteComparisonImage from '../functions/chooseLatteComparisonImage.js';
+import chooseLatteComparisonText from '../functions/chooseLatteComparisonText.js';
 
 export default function PageThree(props) {
-  const { multiplier } = props;
+  const {multiplier} = props;
 
   return (
     <div className="page page-three">
@@ -18,7 +18,7 @@ export default function PageThree(props) {
             alt={chooseParkingComparisonImage(multiplier).alt}
           />
           <h2>
-            You putting <strong>$0.25</strong> in a parking meter is like Bezos
+            You putting <strong>$0.25</strong> in a parking meter is like Elon
             buying {chooseParkingComparisonText(multiplier)}
           </h2>
         </div>
@@ -36,7 +36,7 @@ export default function PageThree(props) {
           />
           <h2>
             For the relative cost of a Dunkin' Donuts <strong>$5</strong> latte,
-            Jeff Bezos could buy {chooseLatteComparisonText(multiplier)}
+            Elon Musk could buy {chooseLatteComparisonText(multiplier)}
           </h2>
         </div>
 
@@ -55,7 +55,7 @@ export default function PageThree(props) {
             How about the joy of finding a forgotten <strong>$20</strong> in
             your pocket?
             <br />
-            Bezos would have to find
+            Elon would have to find
             <strong> ${(multiplier * 20).toLocaleString()}</strong> to feel that
             same excitement.
           </h2>

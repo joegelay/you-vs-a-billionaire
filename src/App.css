@@ -224,13 +224,13 @@ strong {
   color: var(--orange-color);
 }
 
-#bezos-svg {
+#elon-svg {
   min-width: 475px;
   max-width: 600px;
 }
 
 @media only screen and (max-width: 500px) {
-  #bezos-svg {
+  #elon-svg {
     min-width: 200px;
     max-width: 600px;
   }

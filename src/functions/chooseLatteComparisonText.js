@@ -1,4 +1,4 @@
-import ReactTooltip from "react-tooltip";
+import ReactTooltip from 'react-tooltip';
 
 export default function chooseLatteComparisonText(multiplier) {
   const latte = 5;
@@ -7,18 +7,14 @@ export default function chooseLatteComparisonText(multiplier) {
   const villa = 350000;
   const espressoMachine = 10000;
 
-  const bezosDunkinAmount = Math.floor((multiplier * latte) / dunkin);
-  const bezosVillaAmount = Math.floor((multiplier * latte) / villa);
-  const bezosEspressoAmount = Math.floor(
-    (multiplier * latte) / espressoMachine
-  );
+  const elonDunkinAmount = Math.floor((multiplier * latte) / dunkin);
+  const elonVillaAmount = Math.floor((multiplier * latte) / villa);
+  const elonEspressoAmount = Math.floor((multiplier * latte) / espressoMachine);
 
-  if (bezosDunkinAmount) {
+  if (elonDunkinAmount) {
     return (
       <span>
-        {bezosDunkinAmount > 1
-          ? `${bezosDunkinAmount.toLocaleString()} `
-          : "a "}
+        {elonDunkinAmount > 1 ? `${elonDunkinAmount.toLocaleString()} ` : 'a '}
         <span
           className="dotted"
           data-for="dunkin"
@@ -26,31 +22,31 @@ export default function chooseLatteComparisonText(multiplier) {
         >
           Dunkin'&nbsp;Donuts
           <ReactTooltip id="dunkin" effect="solid" place="bottom" />
-        </span>{" "}
+        </span>{' '}
         franchise
-        {bezosDunkinAmount > 1 ? "s" : ""}.
+        {elonDunkinAmount > 1 ? 's' : ''}.
       </span>
     );
-  } else if (bezosVillaAmount) {
+  } else if (elonVillaAmount) {
     return (
       <span>
-        {" "}
-        {bezosVillaAmount > 1 ? bezosVillaAmount : "a"}{" "}
+        {' '}
+        {elonVillaAmount > 1 ? elonVillaAmount : 'a'}{' '}
         <span
           className="dotted"
           data-tip="Cost of villa: $350,000"
           data-for="villa"
         >
           villa
-          {bezosVillaAmount > 1 ? "s" : ""}
+          {elonVillaAmount > 1 ? 's' : ''}
           <ReactTooltip id="villa" effect="solid" place="bottom" />
-        </span>{" "}
+        </span>{' '}
         in Tuscany, Italy.
       </span>
     );
   } else {
     return ` ${
-      bezosEspressoAmount > 1 ? bezosEspressoAmount : "a"
-    } $10,000 espresso machine${bezosEspressoAmount > 1 ? "s" : ""}.`;
+      elonEspressoAmount > 1 ? elonEspressoAmount : 'a'
+    } $10,000 espresso machine${elonEspressoAmount > 1 ? 's' : ''}.`;
   }
 }

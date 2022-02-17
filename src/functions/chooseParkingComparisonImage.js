@@ -1,7 +1,7 @@
-import RollsRoyce from "../svgs/rolls-royce.svg";
-import Audi from "../svgs/audi.svg";
-import Honda from "../svgs/honda.svg";
-import Laptop from "../svgs/laptop.svg";
+import RollsRoyce from '../svgs/rolls-royce.svg';
+import Audi from '../svgs/audi.svg';
+import Honda from '../svgs/honda.svg';
+import Laptop from '../svgs/laptop.svg';
 
 export default function chooseParkingComparisonImage(multiplier) {
   const parking = 0.25;
@@ -10,31 +10,31 @@ export default function chooseParkingComparisonImage(multiplier) {
   const audiR8 = 150000;
   const hondaCivic = 22000;
 
-  const bezosRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
-  const bezosAudiAmount = Math.floor((multiplier * parking) / audiR8);
-  const bezosCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
+  const elonRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
+  const elonAudiAmount = Math.floor((multiplier * parking) / audiR8);
+  const elonCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
 
   const result = {};
 
-  if (bezosRollsAmount) {
+  if (elonRollsAmount) {
     result.src = RollsRoyce;
-    result.id = "rolls-royce";
-    result.alt = "A Rolls Royce car and logo";
+    result.id = 'rolls-royce';
+    result.alt = 'A Rolls Royce car and logo';
     return result;
-  } else if (bezosAudiAmount) {
+  } else if (elonAudiAmount) {
     result.src = Audi;
-    result.id = "audi";
-    result.alt = "An Audi R8 sports car";
+    result.id = 'audi';
+    result.alt = 'An Audi R8 sports car';
     return result;
-  } else if (bezosCivicAmount) {
+  } else if (elonCivicAmount) {
     result.src = Honda;
-    result.id = "honda";
-    result.alt = "Honda logo";
+    result.id = 'honda';
+    result.alt = 'Honda logo';
     return result;
   } else {
     result.src = Laptop;
-    result.id = "laptop";
-    result.alt = "An Apple laptop";
+    result.id = 'laptop';
+    result.alt = 'An Apple laptop';
     return result;
   }
 }

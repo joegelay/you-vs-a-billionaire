@@ -11,14 +11,14 @@ import {
   TwitterIcon,
   RedditIcon,
   WhatsappIcon,
-} from "react-share";
+} from 'react-share';
 
 export default function SocialShareButtons() {
   const iconSize = 50;
-  const url = "https://youvsabillionaire.com";
-  const emailSubj = "Check out this website...";
+  const url = 'https://youvsabillionaire.com';
+  const emailSubj = 'Check out this website...';
   const quote =
-    "In 2020, Jeff Bezos's net worth grew by an estimated $75 billion. See how you stack up.";
+    "In 2021, Elon Musks's net worth grew by an estimated $121 billion. See how you stack up.";
   return (
     <div className="row flex-row share-buttons-wrapper">
       <EmailShareButton url={url} subject={emailSubj} body={quote}>
@@ -33,7 +33,7 @@ export default function SocialShareButtons() {
       <TwitterShareButton
         url={url}
         title={quote}
-        hashtags={["billionaire", "inequality", "bezos"]}
+        hashtags={['billionaire', 'inequality', 'bezos']}
       >
         <TwitterIcon size={iconSize} round="true"></TwitterIcon>
       </TwitterShareButton>

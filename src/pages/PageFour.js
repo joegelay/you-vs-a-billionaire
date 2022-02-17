@@ -1,34 +1,34 @@
-import Tesla from "../svgs/tesla.svg";
-import House from "../svgs/house.svg";
-import ReactTooltip from "react-tooltip";
+import Tesla from '../svgs/tesla.svg';
+import House from '../svgs/house.svg';
+import ReactTooltip from 'react-tooltip';
 
 export default function PageFour(props) {
-  const { multiplier } = props;
-  const teslaCost = 158990;
-  const houseCost = 334000;
+  const {multiplier} = props;
+  const teslaCost = 150990;
+  const houseCost = 346990;
 
   const chooseTeslaText = () => {
-    const bezosCost = (teslaCost / multiplier).toFixed(2);
+    const elonCost = (teslaCost / multiplier).toFixed(2);
 
-    if (bezosCost >= 0.01) {
+    if (elonCost >= 0.01) {
       return (
         <span>
-          {["That's a mere ", <strong>${bezosCost}</strong>, " to Jeff Bezos"]}
+          {["That's a mere ", <strong>${elonCost}</strong>, ' to Elon!']}
         </span>
       );
     }
 
-    return "That's less than a penny to Jeff Bezos";
+    return "That's less than a penny to Elon Musk";
   };
 
   const chooseHouseText = () => {
-    const bezosCost = (houseCost / multiplier).toFixed(2);
+    const elonCost = (houseCost / multiplier).toFixed(2);
 
-    if (bezosCost >= 0.01) {
+    if (elonCost >= 0.01) {
       return <strong> ${(houseCost / multiplier).toFixed(2)}</strong>;
     }
 
-    return " less than a penny";
+    return ' less than a penny';
   };
 
   return (
@@ -41,7 +41,7 @@ export default function PageFour(props) {
         >
           <h3 className="scroll-message">
             We could also look at what BIG purchases for you would feel like to
-            Jeff&nbsp;Bezos...
+            Elon&nbsp;Musk...
           </h3>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function PageFour(props) {
             alt="A Tesla car"
           />
           <h2>
-            A fully-loaded, Tesla Model S would set you back{" "}
+            A fully-loaded, Tesla Model S would set you back{' '}
             <strong
               className="dotted"
               data-tip="MSRP with all upgrades selected on Tesla.com"
@@ -84,16 +84,16 @@ export default function PageFour(props) {
             alt="A house"
           />
           <h2>
-            In 2020, the median home listing in the United States was{" "}
+            In 2021, the median home listing in the United States was{' '}
             <strong
               className="dotted"
               data-for="home"
-              data-tip="Data sourced from Realtor.com as of December, 2020"
+              data-tip="Data sourced from CNN.com as of January, 2022"
             >
               ${houseCost.toLocaleString()}
             </strong>
-            <ReactTooltip id="home" effect="solid" place="bottom" />. Relative to how much you earn, that's {chooseHouseText()} for Jeff
-            Bezos.
+            <ReactTooltip id="home" effect="solid" place="bottom" />. Relative
+            to how much you earn, that's {chooseHouseText()} for Elon Musk.
           </h2>
         </div>
       </div>

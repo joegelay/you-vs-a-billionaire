@@ -1,6 +1,6 @@
 # You Vs. A Billionaire
 
-In 2020, Jeff Bezos's net worth grew by an estimated $75 billion. Visit [You Vs. A Billionaire](https://youvsabillionaire.com) to see how you stack up.
+In 2021, Elon Musks's net worth grew by an estimated $121 billion. Visit [You Vs. A Billionaire](https://youvsabillionaire.com) to see how you stack up.
 
 ## About
 

@@ -6,8 +6,8 @@ export default function PageTen() {
       <div className="row flex-row">
         <div data-aos="fade-left" className="column flex-column end-page">
           <h2>
-            You might not be Billionaire Bezos, but you are extraordinarily rich
-            to so many others.
+            You might not be Elon Musk, but you are extraordinarily rich to so
+            many others.
           </h2>
           <h2>
             Want to learn more about how you can help improve the lives of
