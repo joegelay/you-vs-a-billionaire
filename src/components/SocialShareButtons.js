@@ -33,7 +33,7 @@ export default function SocialShareButtons() {
       <TwitterShareButton
         url={url}
         title={quote}
-        hashtags={['billionaire', 'inequality', 'bezos']}
+        hashtags={['billionaire', 'inequality', 'elonmusk']}
       >
         <TwitterIcon size={iconSize} round="true"></TwitterIcon>
       </TwitterShareButton>
