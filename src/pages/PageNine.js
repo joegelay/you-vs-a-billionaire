@@ -1,7 +1,7 @@
-import Latte from "../svgs/latte.svg";
+import Latte from '../svgs/latte.svg';
 
 export default function PageNine(props) {
-  const { formattedSalary, povertyMultiplier } = props;
+  const {formattedSalary, povertyMultiplier} = props;
 
   return (
     <div className="page page-nine globe-background">
@@ -17,9 +17,9 @@ export default function PageNine(props) {
           <h2>
             Your dollar would be
             <span className="uptick">
-              {" "}
+              {' '}
               {povertyMultiplier.toLocaleString()}&nbsp;times
-            </span>{" "}
+            </span>{' '}
             more valuable to a person living in extreme poverty.
           </h2>
         </div>
@@ -40,9 +40,9 @@ export default function PageNine(props) {
             Remember that <strong>$5</strong> latte from before?
           </h2>
           <h2>
-            While it might not seem like much, donating that <strong>$5</strong>{" "}
+            While it might not seem like much, donating that <strong>$5</strong>{' '}
             to someone living in extreme poverty would benefit them the same way
-            an extra{" "}
+            an extra{' '}
             <strong>${(povertyMultiplier * 5).toLocaleString()}</strong> would
             benefit you.
           </h2>

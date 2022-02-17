@@ -1,8 +1,8 @@
-import DumpMoney from "../svgs/dump-money.svg";
-import Increase from "../svgs/increase.svg";
+import DumpMoney from '../svgs/dump-money.svg';
+import Increase from '../svgs/increase.svg';
 
 export default function PageTwo(props) {
-  const { multiplier } = props;
+  const {multiplier} = props;
 
   return (
     <div id="page-two" className="page page-two">
@@ -19,11 +19,11 @@ export default function PageTwo(props) {
             alt="A chart show money going up"
           />
           <h2>
-            Jeff Bezos's annual earnings are
+            Elon Musks's annual earnings are
             <span className="uptick">
-              {" "}
+              {' '}
               {multiplier.toLocaleString()}&nbsp;times
-            </span>{" "}
+            </span>{' '}
             larger than yours.
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function PageTwo(props) {
             alt="A person throwing around money"
           />
           <h2>
-            In other words, you spending <strong>$1</strong>, or Bezos spending
+            In other words, you spending <strong>$1</strong>, or Elon spending
             <strong> ${multiplier.toLocaleString()}</strong>, puts the same size
             dents in your wallets.
           </h2>
