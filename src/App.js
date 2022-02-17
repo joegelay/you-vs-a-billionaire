@@ -4,17 +4,10 @@ import PageOne from './pages/PageOne';
 import ContentPages from './components/ContentPages';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import ReactGA from 'react-ga';
 
 function App() {
-  const setGA = () => {
-    ReactGA.initialize('G-379L5WYVDV');
-    ReactGA.pageview('Init page view');
-  };
-
   useEffect(() => {
     Aos.init({duration: 600});
-    setGA();
   }, []);
 
   const [salary, setSalary] = useState();
