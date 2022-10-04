@@ -1,26 +1,26 @@
 import DumpMoney from '../svgs/dump-money.svg';
 import Increase from '../svgs/increase.svg';
 
-export default function PageTwo(props) {
-  const {multiplier} = props;
+export default function Inro(props) {
+  const { multiplier } = props;
 
   return (
-    <div id="page-two" className="page page-two">
-      <div className="row flex-row">
+    <div id='page-two' className='page page-two'>
+      <div className='row flex-row'>
         <div
-          data-aos="zoom-in"
-          data-aos-delay="250"
-          className="column flex-column col-1-margin"
+          data-aos='zoom-in'
+          data-aos-delay='250'
+          className='column flex-column col-1-margin'
         >
           <img
-            id="increase"
-            className="page-two-image"
+            id='increase'
+            className='page-two-image'
             src={Increase}
-            alt="A chart show money going up"
+            alt='A chart show money going up'
           />
           <h2>
             Elon Musks's annual earnings are
-            <span className="uptick">
+            <span className='uptick'>
               {' '}
               {multiplier.toLocaleString()}&nbsp;times
             </span>{' '}
@@ -29,15 +29,15 @@ export default function PageTwo(props) {
         </div>
 
         <div
-          data-aos="zoom-in"
-          data-aos-delay="500"
-          className="column flex-column col-1-margin"
+          data-aos='zoom-in'
+          data-aos-delay='500'
+          className='column flex-column col-1-margin'
         >
           <img
-            id="dump-money"
-            className="page-two-image"
+            id='dump-money'
+            className='page-two-image'
             src={DumpMoney}
-            alt="A person throwing around money"
+            alt='A person throwing around money'
           />
           <h2>
             In other words, you spending <strong>$1</strong>, or Elon spending
@@ -47,9 +47,9 @@ export default function PageTwo(props) {
         </div>
       </div>
 
-      <div className="row flex-row">
-        <div className="column flex-column">
-          <h3 data-aos="fade" data-aos-delay="750" className="scroll-message">
+      <div className='row flex-row'>
+        <div className='column flex-column'>
+          <h3 data-aos='fade' data-aos-delay='750' className='scroll-message'>
             To truly fathom the difference between your spending powers, let's
             take a look at a few examples...
           </h3>

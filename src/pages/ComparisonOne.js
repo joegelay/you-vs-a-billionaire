@@ -4,7 +4,7 @@ import chooseParkingComparisonText from '../utils/chooseParkingComparisonText.js
 import chooseLatteComparisonImage from '../utils/chooseLatteComparisonImage.js';
 import chooseLatteComparisonText from '../utils/chooseLatteComparisonText.js';
 
-export default function PageThree(props) {
+export default function ComparisonOne(props) {
   const { multiplier } = props;
 
   return (

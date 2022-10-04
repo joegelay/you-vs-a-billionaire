@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import PageOne from './pages/PageOne';
+import Home from './pages/Home';
 import ContentPages from './components/ContentPages';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -20,11 +20,11 @@ function App() {
 
   return (
     <div className='app'>
-      <PageOne
+      <Home
         salary={salary}
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
-      ></PageOne>
+      ></Home>
       {salary && (
         <ContentPages
           salary={salary}

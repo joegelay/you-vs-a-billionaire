@@ -1,12 +1,12 @@
-import PageTwo from '../pages/PageTwo';
-import PageThree from '../pages/PageThree';
-import PageFour from '../pages/PageFour';
-import PageFive from '../pages/PageFive';
-import PageSix from '../pages/PageSix';
-import PageSeven from '../pages/PageSeven';
-import PageEight from '../pages/PageEight';
-import PageNine from '../pages/PageNine';
-import PageTen from '../pages/PageTen';
+import Intro from '../pages/Intro';
+import ComparisonOne from '../pages/ComparisonOne';
+import ComparisonTwo from '../pages/ComparisonTwo';
+import ShiftOne from '../pages/ShiftOne';
+import ShiftTwo from '../pages/ShiftTwo';
+import GlobalPoverty from '../pages/GlobalPoverty';
+import Percentiles from '../pages/Percentiles';
+import ComparisonThree from '../pages/ComparisonThree';
+import Closing from '../pages/Closing';
 import Footer from './Footer';
 
 export default function ContentPages(props) {
@@ -14,32 +14,32 @@ export default function ContentPages(props) {
 
   return (
     <div>
-      <PageTwo
+      <Intro
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
-      ></PageTwo>
-      <PageThree
+      ></Intro>
+      <ComparisonOne
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
-      ></PageThree>
-      <PageFour
+      ></ComparisonOne>
+      <ComparisonTwo
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
-      ></PageFour>
-      <PageFive></PageFive>
-      <PageSix></PageSix>
-      <PageSeven></PageSeven>
-      <PageEight></PageEight>
+      ></ComparisonTwo>
+      <ShiftOne></ShiftOne>
+      <ShiftTwo></ShiftTwo>
+      <GlobalPoverty></GlobalPoverty>
+      <Percentiles></Percentiles>
       {salary >= 5000 && (
-        <PageNine
+        <ComparisonThree
           formattedSalary={formattedSalary}
           povertyMultiplier={povertyMultiplier}
-        ></PageNine>
+        ></ComparisonThree>
       )}
-      <PageTen></PageTen>
+      <Closing></Closing>
       <Footer></Footer>
     </div>
   );
