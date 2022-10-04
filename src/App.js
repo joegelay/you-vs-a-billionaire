@@ -1,5 +1,5 @@
 import './App.css';
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import PageOne from './pages/PageOne';
 import ContentPages from './components/ContentPages';
 import Aos from 'aos';
@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
-    Aos.init({duration: 600});
+    Aos.init({ duration: 600 });
   }, []);
 
   const [salary, setSalary] = useState();
@@ -19,21 +19,19 @@ function App() {
   const povertyMultiplier = Math.round(salary / extremePovertyWage);
 
   return (
-    <div className="app">
+    <div className='app'>
       <PageOne
         salary={salary}
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
       ></PageOne>
-      {salary ? (
+      {salary && (
         <ContentPages
           salary={salary}
           formattedSalary={formattedSalary}
           multiplier={multiplier}
           povertyMultiplier={povertyMultiplier}
         ></ContentPages>
-      ) : (
-        ''
       )}
     </div>
   );
