@@ -7,46 +7,50 @@ export default function chooseLatteComparisonText(multiplier) {
   const villa = 350000;
   const espressoMachine = 10000;
 
-  const elonDunkinAmount = Math.floor((multiplier * latte) / dunkin);
-  const elonVillaAmount = Math.floor((multiplier * latte) / villa);
-  const elonEspressoAmount = Math.floor((multiplier * latte) / espressoMachine);
+  const billionaireDunkinAmount = Math.floor((multiplier * latte) / dunkin);
+  const billionaireVillaAmount = Math.floor((multiplier * latte) / villa);
+  const billionaireEspressoAmount = Math.floor(
+    (multiplier * latte) / espressoMachine
+  );
 
-  if (elonDunkinAmount) {
+  if (billionaireDunkinAmount) {
     return (
       <span>
-        {elonDunkinAmount > 1 ? `${elonDunkinAmount.toLocaleString()} ` : 'a '}
+        {billionaireDunkinAmount > 1
+          ? `${billionaireDunkinAmount.toLocaleString()} `
+          : 'a '}
         <span
-          className="dotted"
-          data-for="dunkin"
-          data-tip="Average cost of a new franchise is $1,367,350 according to DunkinFranchising.com"
+          className='dotted'
+          data-for='dunkin'
+          data-tip='Average cost of a new franchise is $1,367,350 according to DunkinFranchising.com'
         >
           Dunkin'&nbsp;Donuts
-          <ReactTooltip id="dunkin" effect="solid" place="bottom" />
+          <ReactTooltip id='dunkin' effect='solid' place='bottom' />
         </span>{' '}
         franchise
-        {elonDunkinAmount > 1 ? 's' : ''}.
+        {billionaireDunkinAmount > 1 ? 's' : ''}.
       </span>
     );
-  } else if (elonVillaAmount) {
+  } else if (billionaireVillaAmount) {
     return (
       <span>
         {' '}
-        {elonVillaAmount > 1 ? elonVillaAmount : 'a'}{' '}
+        {billionaireVillaAmount > 1 ? billionaireVillaAmount : 'a'}{' '}
         <span
-          className="dotted"
-          data-tip="Cost of villa: $350,000"
-          data-for="villa"
+          className='dotted'
+          data-tip='Cost of villa: $350,000'
+          data-for='villa'
         >
           villa
-          {elonVillaAmount > 1 ? 's' : ''}
-          <ReactTooltip id="villa" effect="solid" place="bottom" />
+          {billionaireVillaAmount > 1 ? 's' : ''}
+          <ReactTooltip id='villa' effect='solid' place='bottom' />
         </span>{' '}
         in Tuscany, Italy.
       </span>
     );
   } else {
     return ` ${
-      elonEspressoAmount > 1 ? elonEspressoAmount : 'a'
-    } $10,000 espresso machine${elonEspressoAmount > 1 ? 's' : ''}.`;
+      billionaireEspressoAmount > 1 ? billionaireEspressoAmount : 'a'
+    } $10,000 espresso machine${billionaireEspressoAmount > 1 ? 's' : ''}.`;
   }
 }

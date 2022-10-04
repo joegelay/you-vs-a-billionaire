@@ -10,23 +10,27 @@ export default function chooseParkingComparisonImage(multiplier) {
   const audiR8 = 150000;
   const hondaCivic = 22000;
 
-  const elonRollsAmount = Math.floor((multiplier * parking) / rollsRoyce);
-  const elonAudiAmount = Math.floor((multiplier * parking) / audiR8);
-  const elonCivicAmount = Math.floor((multiplier * parking) / hondaCivic);
+  const billionaireRollsAmount = Math.floor(
+    (multiplier * parking) / rollsRoyce
+  );
+  const billionaireAudiAmount = Math.floor((multiplier * parking) / audiR8);
+  const billionaireCivicAmount = Math.floor(
+    (multiplier * parking) / hondaCivic
+  );
 
   const result = {};
 
-  if (elonRollsAmount) {
+  if (billionaireRollsAmount) {
     result.src = RollsRoyce;
     result.id = 'rolls-royce';
     result.alt = 'A Rolls Royce car and logo';
     return result;
-  } else if (elonAudiAmount) {
+  } else if (billionaireAudiAmount) {
     result.src = Audi;
     result.id = 'audi';
     result.alt = 'An Audi R8 sports car';
     return result;
-  } else if (elonCivicAmount) {
+  } else if (billionaireCivicAmount) {
     result.src = Honda;
     result.id = 'honda';
     result.alt = 'Honda logo';

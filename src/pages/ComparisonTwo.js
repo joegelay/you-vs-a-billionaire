@@ -8,12 +8,12 @@ export default function ComparisonTwo(props) {
   const houseCost = 346990;
 
   const chooseTeslaText = () => {
-    const elonCost = (teslaCost / multiplier).toFixed(2);
+    const billionaireCost = (teslaCost / multiplier).toFixed(2);
 
-    if (elonCost >= 0.01) {
+    if (billionaireCost >= 0.01) {
       return (
         <span>
-          {["That's a mere ", <strong>${elonCost}</strong>, ' to Elon!']}
+          {["That's a mere ", <strong>${billionaireCost}</strong>, ' to Elon!']}
         </span>
       );
     }
@@ -22,9 +22,9 @@ export default function ComparisonTwo(props) {
   };
 
   const chooseHouseText = () => {
-    const elonCost = (houseCost / multiplier).toFixed(2);
+    const billionaireCost = (houseCost / multiplier).toFixed(2);
 
-    if (elonCost >= 0.01) {
+    if (billionaireCost >= 0.01) {
       return <strong> ${(houseCost / multiplier).toFixed(2)}</strong>;
     }
 

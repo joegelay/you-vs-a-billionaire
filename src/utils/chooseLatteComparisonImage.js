@@ -8,17 +8,17 @@ export default function chooseLatteComparisonImage(multiplier) {
   const dunkin = 1367350;
   const villa = 350000;
 
-  const elonDunkinAmount = Math.floor((multiplier * latte) / dunkin);
-  const elonVillaAmount = Math.floor((multiplier * latte) / villa);
+  const billionaireDunkinAmount = Math.floor((multiplier * latte) / dunkin);
+  const billionaireVillaAmount = Math.floor((multiplier * latte) / villa);
 
   const result = {};
 
-  if (elonDunkinAmount) {
+  if (billionaireDunkinAmount) {
     result.src = Dunkin;
     result.id = 'dunkin';
     result.alt = 'A donut stand';
     return result;
-  } else if (elonVillaAmount) {
+  } else if (billionaireVillaAmount) {
     result.src = Villa;
     result.id = 'villa';
     result.alt = 'An Italian Villa';
