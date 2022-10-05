@@ -13,12 +13,12 @@ function App() {
 
   const ldClient = useLDClient();
 
-  const { billionaireDataOverride } = useFlags();
+  const { billionaireDataOverride, showLatteComparison } = useFlags();
 
   const randomKey = uuid();
 
   const identifyUser = () => {
-    ldClient.identify({ key: randomKey, custom: { salary } });
+    ldClient.identify({ key: randomKey, custom: { salary: parseInt(salary) } });
   };
 
   useEffect(() => {
@@ -56,6 +56,7 @@ function App() {
           multiplier={multiplier}
           povertyMultiplier={povertyMultiplier}
           billionaire={billionaire}
+          showLatteComparison={showLatteComparison}
         ></ContentPages>
       )}
     </div>

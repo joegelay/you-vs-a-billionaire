@@ -16,6 +16,7 @@ export default function ContentPages(props) {
     multiplier,
     povertyMultiplier,
     billionaire,
+    showLatteComparison,
   } = props;
 
   return (
@@ -42,7 +43,7 @@ export default function ContentPages(props) {
       <ShiftTwo></ShiftTwo>
       <GlobalPoverty></GlobalPoverty>
       <Percentiles></Percentiles>
-      {salary >= 5000 && (
+      {showLatteComparison && (
         <ComparisonThree
           formattedSalary={formattedSalary}
           povertyMultiplier={povertyMultiplier}
