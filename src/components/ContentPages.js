@@ -10,7 +10,13 @@ import Closing from '../pages/Closing';
 import Footer from './Footer';
 
 export default function ContentPages(props) {
-  const { salary, formattedSalary, multiplier, povertyMultiplier } = props;
+  const {
+    salary,
+    formattedSalary,
+    multiplier,
+    povertyMultiplier,
+    billionaire,
+  } = props;
 
   return (
     <div>

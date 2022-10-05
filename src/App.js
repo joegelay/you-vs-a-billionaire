@@ -6,16 +6,22 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
+  const [salary, setSalary] = useState();
+  const [formattedSalary, setFormattedSalary] = useState();
+
   useEffect(() => {
     Aos.init({ duration: 600 });
   }, []);
 
-  const [salary, setSalary] = useState();
-  const [formattedSalary, setFormattedSalary] = useState();
-
   const extremePovertyWage = 693.5;
 
-  const multiplier = Math.round(121000000000 / salary);
+  const billionaire = {
+    fullName: 'Elon Musk',
+    firstName: 'Elon',
+    earnings: 121000000000,
+  };
+
+  const multiplier = Math.round(billionaire.earnings / salary);
   const povertyMultiplier = Math.round(salary / extremePovertyWage);
 
   return (
@@ -24,6 +30,7 @@ function App() {
         salary={salary}
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
+        billionaire={billionaire}
       ></Home>
       {salary && (
         <ContentPages
@@ -31,6 +38,7 @@ function App() {
           formattedSalary={formattedSalary}
           multiplier={multiplier}
           povertyMultiplier={povertyMultiplier}
+          billionaire={billionaire}
         ></ContentPages>
       )}
     </div>

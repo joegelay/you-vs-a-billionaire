@@ -1,7 +1,7 @@
 import DumpMoney from '../svgs/dump-money.svg';
 import Increase from '../svgs/increase.svg';
 
-export default function Inro(props) {
+export default function Intro(props) {
   const { multiplier } = props;
 
   return (
@@ -19,7 +19,7 @@ export default function Inro(props) {
             alt='A chart show money going up'
           />
           <h2>
-            Elon Musks's annual earnings are
+            Elon Musk's annual earnings are
             <span className='uptick'>
               {' '}
               {multiplier.toLocaleString()}&nbsp;times
