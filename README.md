@@ -29,7 +29,7 @@ To me, there does some to be something uniquely evil about Bezos though, so I wa
 
 There are two feature flags used in You Vs. A Billionare.
 
-1. The aformentioned `billionaire-data-override` flag that, when toggled on, served Bezos data instead of Elon Musk. Code reference [here](https://github.com/joegelay/you-vs-a-billionaire/blob/main/src/App.js#L36).
+1. The aformentioned `billionaire-data-override` flag that, when toggled on, serves Bezos data instead of Elon Musk. Code reference [here](https://github.com/joegelay/you-vs-a-billionaire/blob/main/src/App.js#L36).
 
    - Setup this flag in your own LaunchDarkly account by creating a JSON flag variation (be sure to check the flag's SDKs using Client-side key checkbox) that serves Jeff Bezos data when targeting is on, and Elon Musk data when targeting is off.
    - Bezos JSON (poor Bezos only made $5 billion in 2021):
@@ -61,8 +61,6 @@ There are two feature flags used in You Vs. A Billionare.
    - Setup this flag by creating a Boolean flag variation that serves `True` to users that match the rule: If `salary` >= 5000 (or any income number you want to test).
 
      - A limitation of setting up this feature flag is that you won't be able to select `salary` as a user attribute in the targeting setup until LaunchDarkly receives a user with the custom `salary` attribute from the client-side application. More details on custom user attributes can be found [here](https://docs.launchdarkly.com/home/users/custom-attributes).
-       <br/>
-       <br/>
 
    - Again, be sure to check the flag's 'SDKs using Client-side key' checkbox while creating the flag.
 
