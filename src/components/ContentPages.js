@@ -48,7 +48,7 @@ export default function ContentPages(props) {
           povertyMultiplier={povertyMultiplier}
         ></ComparisonThree>
       )}
-      <Closing></Closing>
+      <Closing billionaire={billionaire}></Closing>
       <Footer></Footer>
     </div>
   );

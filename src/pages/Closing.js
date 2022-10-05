@@ -1,12 +1,14 @@
 import SocialShareButtons from '../components/SocialShareButtons';
 
-export default function Closing() {
+export default function Closing({ billionaire }) {
+  const { fullName } = billionaire;
+
   return (
     <div className='page page-ten globe-background'>
       <div className='row flex-row'>
         <div data-aos='fade-left' className='column flex-column end-page'>
           <h2>
-            You might not be Elon Musk, but you are extraordinarily rich to so
+            You might not be {fullName}, but you are extraordinarily rich to so
             many others.
           </h2>
           <h2>

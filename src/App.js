@@ -16,8 +16,8 @@ function App() {
   const extremePovertyWage = 693.5;
 
   const billionaire = {
-    fullName: 'Elon Musk',
-    firstName: 'Elon',
+    fullName: 'Jeff Bezos',
+    firstName: 'Jeff',
     earnings: 121000000000,
   };
 
