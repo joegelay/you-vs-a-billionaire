@@ -24,16 +24,19 @@ export default function ContentPages(props) {
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
+        billionaire={billionaire}
       ></Intro>
       <ComparisonOne
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
+        billionaire={billionaire}
       ></ComparisonOne>
       <ComparisonTwo
         salary={salary}
         formattedSalary={formattedSalary}
         multiplier={multiplier}
+        billionaire={billionaire}
       ></ComparisonTwo>
       <ShiftOne></ShiftOne>
       <ShiftTwo></ShiftTwo>

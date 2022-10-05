@@ -2,7 +2,8 @@ import DumpMoney from '../svgs/dump-money.svg';
 import Increase from '../svgs/increase.svg';
 
 export default function Intro(props) {
-  const { multiplier } = props;
+  const { multiplier, billionaire } = props;
+  const { fullName, firstName } = billionaire;
 
   return (
     <div id='page-two' className='page page-two'>
@@ -19,7 +20,7 @@ export default function Intro(props) {
             alt='A chart show money going up'
           />
           <h2>
-            Elon Musk's annual earnings are
+            {fullName}'s annual earnings are
             <span className='uptick'>
               {' '}
               {multiplier.toLocaleString()}&nbsp;times
@@ -40,7 +41,8 @@ export default function Intro(props) {
             alt='A person throwing around money'
           />
           <h2>
-            In other words, you spending <strong>$1</strong>, or Elon spending
+            In other words, you spending <strong>$1</strong>, or {firstName}{' '}
+            spending
             <strong> ${multiplier.toLocaleString()}</strong>, puts the same size
             dents in your wallets.
           </h2>

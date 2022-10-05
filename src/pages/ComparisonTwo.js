@@ -3,7 +3,9 @@ import House from '../svgs/house.svg';
 import ReactTooltip from 'react-tooltip';
 
 export default function ComparisonTwo(props) {
-  const { multiplier } = props;
+  const { multiplier, billionaire } = props;
+  const { fullName, firstName } = billionaire;
+
   const teslaCost = 150990;
   const houseCost = 346990;
 
@@ -13,12 +15,16 @@ export default function ComparisonTwo(props) {
     if (billionaireCost >= 0.01) {
       return (
         <span>
-          {["That's a mere ", <strong>${billionaireCost}</strong>, ' to Elon!']}
+          {[
+            "That's a mere ",
+            <strong>${billionaireCost}</strong>,
+            ` to ${firstName}`,
+          ]}
         </span>
       );
     }
 
-    return "That's less than a penny to Elon Musk";
+    return `That's less than a penny to ${fullName}`;
   };
 
   const chooseHouseText = () => {
@@ -34,24 +40,16 @@ export default function ComparisonTwo(props) {
   return (
     <div className='page page-four'>
       <div className='row flex-row'>
-        <div
-          data-aos='zoom-in'
-          // data-aos-delay="500"
-          className='column flex-column'
-        >
+        <div data-aos='zoom-in' className='column flex-column'>
           <h3 className='scroll-message'>
-            We could also look at what BIG purchases for you would feel like to
-            Elon&nbsp;Musk...
+            We could also look at what BIG purchases for you would feel like to{' '}
+            {fullName}...
           </h3>
         </div>
       </div>
 
       <div className='row flex-row'>
-        <div
-          data-aos='zoom-in'
-          // data-aos-delay="500"
-          className='column flex-column col-1-margin'
-        >
+        <div data-aos='zoom-in' className='column flex-column col-1-margin'>
           <img
             id='tesla'
             className='page-four-image'
@@ -93,7 +91,7 @@ export default function ComparisonTwo(props) {
               ${houseCost.toLocaleString()}
             </strong>
             <ReactTooltip id='home' effect='solid' place='bottom' />. Relative
-            to how much you earn, that's {chooseHouseText()} for Elon Musk.
+            to how much you earn, that's {chooseHouseText()} for {fullName}.
           </h2>
         </div>
       </div>

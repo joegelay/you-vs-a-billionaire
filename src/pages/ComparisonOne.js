@@ -5,7 +5,8 @@ import chooseLatteComparisonImage from '../utils/chooseLatteComparisonImage.js';
 import chooseLatteComparisonText from '../utils/chooseLatteComparisonText.js';
 
 export default function ComparisonOne(props) {
-  const { multiplier } = props;
+  const { multiplier, billionaire } = props;
+  const { fullName, firstName } = billionaire;
 
   return (
     <div className='page page-three'>
@@ -18,8 +19,8 @@ export default function ComparisonOne(props) {
             alt={chooseParkingComparisonImage(multiplier).alt}
           />
           <h2>
-            You putting <strong>$0.25</strong> in a parking meter is like Elon
-            buying {chooseParkingComparisonText(multiplier)}
+            You putting <strong>$0.25</strong> in a parking meter is like{' '}
+            {firstName} buying {chooseParkingComparisonText(multiplier)}
           </h2>
         </div>
 
@@ -35,8 +36,8 @@ export default function ComparisonOne(props) {
             alt={chooseLatteComparisonImage(multiplier).alt}
           />
           <h2>
-            For the relative cost of a Dunkin' Donuts <strong>$5</strong> latte,
-            Elon Musk could buy {chooseLatteComparisonText(multiplier)}
+            For the relative cost of a Dunkin' Donuts <strong>$5</strong> latte,{' '}
+            {fullName} could buy {chooseLatteComparisonText(multiplier)}
           </h2>
         </div>
 
@@ -55,7 +56,7 @@ export default function ComparisonOne(props) {
             How about the joy of finding a forgotten <strong>$20</strong> in
             your pocket?
             <br />
-            Elon would have to find
+            {firstName} would have to find
             <strong> ${(multiplier * 20).toLocaleString()}</strong> to feel that
             same excitement.
           </h2>

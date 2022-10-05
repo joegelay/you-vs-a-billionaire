@@ -39,7 +39,7 @@ export default function Home(props) {
           <img
             id='billionaire-svg'
             src={firstName === 'Elon' ? Elon : Bezos}
-            alt='Elon Musk'
+            alt={fullName}
           />
         </div>
       </div>
