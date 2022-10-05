@@ -3,7 +3,8 @@ import Elon from '../svgs/elon.svg';
 import Bezos from '../svgs/bezos.svg';
 
 export default function Home(props) {
-  const { salary, setSalary, setFormattedSalary, billionaire } = props;
+  const { salary, setSalary, setFormattedSalary, identifyUser, billionaire } =
+    props;
 
   const { fullName, firstName, earnings } = billionaire;
 
@@ -33,6 +34,7 @@ export default function Home(props) {
             salary={salary}
             setSalary={setSalary}
             setFormattedSalary={setFormattedSalary}
+            identifyUser={identifyUser}
           ></SalaryInput>
         </div>
         <div className='column flex-column'>

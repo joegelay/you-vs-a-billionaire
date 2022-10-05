@@ -1,11 +1,15 @@
-import NumberFormat from "react-number-format";
-import { Link } from "react-scroll";
+import NumberFormat from 'react-number-format';
+import * as Scroll from 'react-scroll';
 
 export default function SalaryInput(props) {
-  const { salary, setSalary, setFormattedSalary } = props;
+  const { salary, setSalary, setFormattedSalary, identifyUser } = props;
+
+  const scroll = Scroll.scroller;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    identifyUser();
+    scroll.scrollTo('page-two', { smooth: true, duration: 1000 });
   };
 
   const MAX_VAL = 10000000;
@@ -16,27 +20,25 @@ export default function SalaryInput(props) {
   };
 
   return (
-    <form className="salary-input" onSubmit={handleSubmit}>
+    <form className='salary-input' onSubmit={handleSubmit}>
       <NumberFormat
         thousandSeparator={true}
-        prefix={"$"}
-        inputMode="numeric"
+        prefix={'$'}
+        inputMode='numeric'
         decimalScale={0}
         value={salary}
         isAllowed={withValueLimit}
         onValueChange={(values) => {
           const { value, formattedValue } = values;
           // formattedValue = $2,223
-          // value ie, 2223
+          // value = 2223
           setFormattedSalary(formattedValue);
           setSalary(value);
         }}
       />
-      <Link to="page-two" smooth={true} duration={1000}>
-        <button className="submit" type="submit">
-          Submit
-        </button>
-      </Link>
+      <button className='submit' type='submit'>
+        Submit
+      </button>
     </form>
   );
 }

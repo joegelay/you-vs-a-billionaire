@@ -1,16 +1,25 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { useFlags } from 'launchdarkly-react-client-sdk';
+import { useFlags, useLDClient } from 'launchdarkly-react-client-sdk';
 import Home from './pages/Home';
 import ContentPages from './components/ContentPages';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import uuid from 'react-uuid';
 
 function App() {
   const [salary, setSalary] = useState();
   const [formattedSalary, setFormattedSalary] = useState();
 
+  const ldClient = useLDClient();
+
   const { billionaireDataOverride } = useFlags();
+
+  const randomKey = uuid();
+
+  const identifyUser = () => {
+    ldClient.identify({ key: randomKey, custom: { salary } });
+  };
 
   useEffect(() => {
     Aos.init({ duration: 600 });
@@ -37,6 +46,7 @@ function App() {
         salary={salary}
         setSalary={setSalary}
         setFormattedSalary={setFormattedSalary}
+        identifyUser={identifyUser}
         billionaire={billionaire}
       ></Home>
       {salary && (
