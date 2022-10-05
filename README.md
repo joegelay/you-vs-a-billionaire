@@ -72,7 +72,7 @@ There are two feature flags used in You Vs. A Billionare.
 2. In the root directory, create a `.env` file with the following variable, updating the value to be a `string` of your personal LaunchDarkly Client-Side ID:
 
 ```
-REACT_APP_LD_CLIENT_SIDE_ID='<your-launchdarkly-client-side-id-here>';
+REACT_APP_LD_CLIENT_SIDE_ID='<your-launchdarkly-client-side-id-here>'
 ```
 
 - You can find your Client-Side ID by visting your LaunchDarkly dashboard, and searching in the top-right corner for "Copy SDK key for the current environment" and then choosing "Client-side ID".
