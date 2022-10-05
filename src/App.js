@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { useFlags } from 'launchdarkly-react-client-sdk';
 import Home from './pages/Home';
 import ContentPages from './components/ContentPages';
 import Aos from 'aos';
@@ -9,17 +10,23 @@ function App() {
   const [salary, setSalary] = useState();
   const [formattedSalary, setFormattedSalary] = useState();
 
+  const { billionaireDataOverride } = useFlags();
+
   useEffect(() => {
     Aos.init({ duration: 600 });
   }, []);
 
   const extremePovertyWage = 693.5;
 
-  const billionaire = {
-    fullName: 'Jeff Bezos',
-    firstName: 'Jeff',
+  const elonMuskData = {
+    fullName: 'Elon Musk',
+    firstName: 'Elon',
     earnings: 121000000000,
   };
+
+  const billionaire = billionaireDataOverride
+    ? billionaireDataOverride
+    : elonMuskData;
 
   const multiplier = Math.round(billionaire.earnings / salary);
   const povertyMultiplier = Math.round(salary / extremePovertyWage);
